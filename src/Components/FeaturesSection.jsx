@@ -65,28 +65,28 @@ const featuresData = [
 
 const FeaturesSection = () => {
   return (
-    <section className="features-section">
-      <div className="container">
-        <h2 className="section-title">
+    <section className="t-features-section">
+      <div className="t-container">
+        <h2 className="t-section-title">
           Why Choose <span>KuberGates</span>
         </h2>
-        <p className="section-subtitle">
+        <p className="t-section-subtitle">
           A secure and scalable crypto payment infrastructure built for modern
           global businesses.
         </p>
 
-        <div className="features-grid">
+        <div className="t-features-grid">
           {featuresData.map((feature, index) => (
             <div
-              className="feature-card"
+              className="t-feature-card"
               key={index}
               style={{ animationDelay: `${index * 0.08}s` }}
             >
-              <div className="feature-icon-wrapper">
-                <span className="feature-icon">{feature.icon}</span>
+              <div className="t-feature-icon-wrapper">
+                <span className="t-feature-icon">{feature.icon}</span>
               </div>
-              <h3 className="feature-title">{feature.title}</h3>
-              <p className="feature-desc">{feature.description}</p>
+              <h3 className="t-feature-title">{feature.title}</h3>
+              <p className="t-feature-desc">{feature.description}</p>
             </div>
           ))}
         </div>

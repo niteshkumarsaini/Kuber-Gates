@@ -1,21 +1,21 @@
-.features-section {
+.t-features-section {
   background-color: #fdfaf7;
   padding: 100px 20px;
   text-align: center;
   overflow: hidden;
 }
 
-.section-title {
+.t-section-title {
   font-size: 2.6rem;
   color: #0f1c3f;
   font-weight: 700;
 }
 
-.section-title span {
+.t-section-title span {
   color: #4b7cf3;
 }
 
-.section-subtitle {
+.t-section-subtitle {
   font-size: 1.05rem;
   color: #606060;
   margin-top: 12px;
@@ -25,7 +25,7 @@
   margin-right: auto;
 }
 
-.features-grid {
+.t-features-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 36px;
@@ -34,7 +34,7 @@
 }
 
 /* Card */
-.feature-card {
+.t-feature-card {
   background-color: #ffffff;
   padding: 36px 28px;
   border-radius: 18px;
@@ -46,14 +46,14 @@
   opacity: 0;
 }
 
-.feature-card:hover {
+.t-feature-card:hover {
   transform: translateY(-12px);
   box-shadow: 0 30px 45px rgba(0, 0, 0, 0.1);
   border-color: #e6ecff;
 }
 
 /* Icon */
-.feature-icon-wrapper {
+.t-feature-icon-wrapper {
   width: 64px;
   height: 64px;
   background: rgba(75, 124, 243, 0.1);
@@ -65,35 +65,35 @@
   transition: transform 0.3s ease, background 0.3s ease;
 }
 
-.feature-card:hover .feature-icon-wrapper {
+.t-feature-card:hover .t-feature-icon-wrapper {
   background: rgba(75, 124, 243, 0.15);
   transform: scale(1.05);
 }
 
-.feature-icon {
+.t-feature-icon {
   font-size: 2rem;
   color: #4b7cf3;
 }
 
-.feature-title {
+.t-feature-title {
   font-size: 1.25rem;
   font-weight: 600;
   color: #0f1c3f;
   margin-bottom: 14px;
 }
 
-.feature-desc {
+.t-feature-desc {
   font-size: 0.95rem;
   color: #606060;
   line-height: 1.6;
 }
 
 /* CTA */
-.features-cta {
+.t-features-cta {
   margin-top: 70px;
 }
 
-.features-btn {
+.t-features-btn {
   display: inline-block;
   padding: 14px 34px;
   border-radius: 30px;
@@ -104,7 +104,7 @@
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.features-btn:hover {
+.t-features-btn:hover {
   transform: translateY(-3px);
   box-shadow: 0 12px 25px rgba(244, 182, 194, 0.5);
 }
@@ -123,11 +123,11 @@
 
 /* Responsive */
 @media (max-width: 768px) {
-  .section-title {
+  .t-section-title {
     font-size: 2.1rem;
   }
 
-  .features-section {
+  .t-features-section {
     padding: 80px 16px;
   }
 }

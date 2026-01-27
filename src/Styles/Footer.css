@@ -86,7 +86,7 @@
 }
 
 .modern-footer {
-  background: linear-gradient(135deg, #e6f0ff, #f7e6ff); /* Soft gradient */
+  /* background: linear-gradient(135deg, #e6f0ff, #f7e6ff); Soft gradient */
   color: #1a1a1a;
   padding: 60px 20px 30px;
   font-family: 'Poppins', sans-serif;
@@ -215,7 +215,7 @@
   }
 }
 .footer {
-  background-color: #fffaf0; /* Off-White / Ivory */
+  /* background-color: #fffaf0; Off-White / Ivory */
   color: #1a1a1a;
   padding: 60px 20px 30px;
   font-family: 'Poppins', sans-serif;
@@ -354,4 +354,9 @@
   .newsletter-form button {
     width: 100%;
   }
+}
+
+.footer{
+background: rgba(255, 254, 254, 0.982);
+
 }
