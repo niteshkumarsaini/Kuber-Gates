@@ -13,7 +13,7 @@ const PaymentFlowSection = () => {
             Optimize & Accept <span>Crypto Payments</span>
           </h2>
 
-          <p className="subtitle">
+          <p className="f-subtitle" style={{margin:"25px 3px"}}>
             Kuber Gates enables businesses to accept crypto payments globally
             with enterprise-grade security and seamless integration.
           </p>
