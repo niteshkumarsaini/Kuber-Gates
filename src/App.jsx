@@ -3,7 +3,8 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import Navbar from './Components/Navbar'
-import './Css/Navbar.css'
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import Home from './Screens/Home'
 
 
 function App() {
@@ -11,14 +12,24 @@ function App() {
 
   return (
     <>
-      <div>
-       <Navbar/>
-       
-      </div>
-     
-       
-      
-    
+      <BrowserRouter>
+        <Routes>
+          <Route path='/' element={<Home />} />
+
+
+
+
+        </Routes>
+
+
+
+
+
+      </BrowserRouter>
+
+
+
+
     </>
   )
 }

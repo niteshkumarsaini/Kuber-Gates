@@ -1,133 +1,85 @@
-import React, { useState } from "react";
-import "../Css/Navbar.css";
+import { useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
+import { ChevronDown, Wallet, Code2 } from "lucide-react";
+import "../Styles/Navbar.css";
+import logo from "../assets/logo.png";
 
-const Navbar = () => {
-  const [menuOpen, setMenuOpen] = useState(false);
-  const [businessOpen, setBusinessOpen] = useState(false);
-  const [personalOpen, setPersonalOpen] = useState(false);
-  const [developersOpen, setDevelopersOpen] = useState(false);
-  const [resourcesOpen, setResourcesOpen] = useState(false);
+export default function Navbar() {
+  const [open, setOpen] = useState(null);
 
   return (
     <header className="navbar">
       <div className="navbar-container">
-        {/* LOGO IMAGE */}
+
+        {/* LOGO */}
         <div className="navbar-logo">
-          <img
-            src="/kubergates logo.png"
-            alt="Kubergates Logo"
-            className="navbar-logo-img"
-          />
+          <img src={logo} alt="Kuber Gates" className="logo"/>
+          {/* <span>Kuber Gates</span> */}
         </div>
 
-        {/* NAV LINKS */}
-        <nav className={`navbar-menu ${menuOpen ? "active" : ""}`}>
-          {/* BUSINESS DROPDOWN */}
-          <div
-            className="dropdown"
-            onMouseEnter={() => setBusinessOpen(true)}
-            onMouseLeave={() => setBusinessOpen(false)}
+        {/* NAV */}
+        <ul className="navbar-links">
+
+          <li
+            onMouseEnter={() => setOpen("products")}
+            onMouseLeave={() => setOpen(null)}
           >
-            <button
-              className="dropdown-toggle"
-              onClick={() => setBusinessOpen(!businessOpen)}
-            >
-              Business
-            </button>
-            <div className={`dropdown-menu ${businessOpen ? "show" : ""}`}>
-              <a href="#">Accept Payments</a>
-              <a href="#">Manage & Exchange</a>
-              <a href="#">Gift Cards</a>
-            </div>
-          </div>
+            Products <ChevronDown size={16} />
+            <AnimatePresence>
+              {open === "products" && (
+                <motion.div
+                  className="dropdown"
+                  initial={{ opacity: 0, y: 8 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  exit={{ opacity: 0, y: 8 }}
+                >
+                  <div className="dropdown-item">
+                    <Wallet size={18} /> Crypto Payments
+                  </div>
+                  <div className="dropdown-item">
+                    <Wallet size={18} /> Payouts
+                  </div>
+                </motion.div>
+              )}
+            </AnimatePresence>
+          </li>
 
-          {/* PERSONAL DROPDOWN */}
-          <div
-            className="dropdown"
-            onMouseEnter={() => setPersonalOpen(true)}
-            onMouseLeave={() => setPersonalOpen(false)}
+          <li
+            onMouseEnter={() => setOpen("developers")}
+            onMouseLeave={() => setOpen(null)}
           >
-            <button
-              className="dropdown-toggle"
-              onClick={() => setPersonalOpen(!personalOpen)}
-            >
-              Personal
-            </button>
-            <div className={`dropdown-menu ${personalOpen ? "show" : ""}`}>
-              <a href="#">Buy & Sell Crypto</a>
-              <a href="#">Gift Cards</a>
-              <a href="#">Merchant Directory</a>
-            </div>
-          </div>
+            Developers <ChevronDown size={16} />
+            <AnimatePresence>
+              {open === "developers" && (
+                <motion.div
+                  className="dropdown"
+                  initial={{ opacity: 0, y: 8 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  exit={{ opacity: 0, y: 8 }}
+                >
+                  <div className="dropdown-item">
+                    <Code2 size={18} /> API Docs
+                  </div>
+                  <div className="dropdown-item">
+                    <Code2 size={18} /> SDKs
+                  </div>
+                </motion.div>
+              )}
+            </AnimatePresence>
+          </li>
 
-          {/* PRICING */}
-          <a href="#">Pricing</a>
+          <li>Company</li>
+          <li>Pricing</li>
+          <li>Blog</li>
+        </ul>
 
-          {/* DEVELOPERS DROPDOWN */}
-          <div
-            className="dropdown"
-            onMouseEnter={() => setDevelopersOpen(true)}
-            onMouseLeave={() => setDevelopersOpen(false)}
-          >
-            <button
-              className="dropdown-toggle"
-              onClick={() => setDevelopersOpen(!developersOpen)}
-            >
-              Developers
-            </button>
-            <div className={`dropdown-menu developers ${developersOpen ? "show" : ""}`}>
-              <a href="#">
-                Documentation
-                <span className="dropdown-subtext">Integrate our API easily</span>
-              </a>
-              <a href="#">
-                GitHub repository
-                <span className="dropdown-subtext">Access our code & tools</span>
-              </a>
-              <a href="#">
-                Status
-                <span className="dropdown-subtext">Live system performance</span>
-              </a>
-            </div>
-          </div>
-
-          {/* RESOURCES DROPDOWN */}
-          <div
-            className="dropdown"
-            onMouseEnter={() => setResourcesOpen(true)}
-            onMouseLeave={() => setResourcesOpen(false)}
-          >
-            <button
-              className="dropdown-toggle"
-              onClick={() => setResourcesOpen(!resourcesOpen)}
-            >
-              Resources
-            </button>
-            <div className={`dropdown-menu ${resourcesOpen ? "show" : ""}`}>
-              <a href="#">Learning Center</a>
-              <a href="#">Company</a>
-            </div>
-          </div>
-        </nav>
-
-        {/* AUTH BUTTONS */}
-        <div className={`navbar-actions ${menuOpen ? "active" : ""}`}>
+        {/* CTA */}
+        <div className="navbar-cta">
           <button className="btn-login">Login</button>
-          <button className="btn-signup">Signup</button>
+          <button className="btn-primary">Get Started</button>
         </div>
 
-        {/* MOBILE TOGGLE */}
-        <div
-          className="navbar-toggle"
-          onClick={() => setMenuOpen(!menuOpen)}
-        >
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
       </div>
     </header>
   );
-};
-
-export default Navbar;
+}
