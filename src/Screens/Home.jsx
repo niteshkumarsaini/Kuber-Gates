@@ -16,6 +16,7 @@ import CryptoCTA from '../Components/CryptoCTA'
 import PaymentFlow from '../Components/PaymentFlow'
 import SecurityTransparency from '../Components/SecurityTransparency'
 import Footer from '../Components/Footer'
+import ComplianceSection from '../Components/ComplianceSection'
 
 
 
@@ -24,11 +25,14 @@ const Home = () => {
     <div>
       <Navbar/>
       <HeroSection/>
-      {/* <TrustedBy/> */}
+      
+    
       <FeaturesSection/>
     <PaymentFlowSection/>
     <SupportedCoinsSection/>
+    <TrustedBy/>
     <PaymentFlow/>
+    <ComplianceSection/>
     {/* <HeroGateway/> */}
     <GatewayFeatures/>
   <SecurityTransparency/>

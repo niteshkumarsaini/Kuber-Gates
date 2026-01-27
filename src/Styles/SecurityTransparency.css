@@ -3,6 +3,7 @@
   background-color: #fafaf7; /* Off-white / Ivory */
   padding: 60px 24px;
   /* border: 2px solid orange; */
+  /* border: 2px solid red; */
 }
  
 /* Layout */
@@ -12,6 +13,7 @@
   /* border: 2px solid blue; */
   display: flex;
   flex-direction: column;
+  /* border: 2px solid orange; */
 }
  
 /* Header */
@@ -41,6 +43,7 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 28px;
+  /* border: 2px solid orange; */
 }
  
 /* Card */
@@ -50,6 +53,10 @@
   border-radius: 18px;
   padding: 32px;
   transition: all 0.3s ease;
+  /* border: 2px solid green; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
  
 .security-card:hover {
