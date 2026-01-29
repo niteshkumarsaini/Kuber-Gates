@@ -11,7 +11,7 @@ import FiatPayment from './Screens/Products/FiatPayment'
 import PaymentGateway from './Screens/Products/PaymentGateway'
 import {GetStart} from './Screens/GetStart'
 import {Price} from './Screens/Price'
-
+import PaymentLinks from './Screens/Products/PaymentLinks'
 
 
 function App() {
@@ -27,7 +27,7 @@ function App() {
    <Route path='/products/crypto-payments' element={<CryptoPayment />} />
     <Route path='/products/fiat-payments' element={<FiatPayment />} />
 <Route path='/products/payment-gateway' element={<PaymentGateway />} />
-
+<Route path='/products/payment-links' element={<PaymentLinks />} />
 
         </Routes>
 

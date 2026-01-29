@@ -1,0 +1,136 @@
+.pl-section {
+  padding: 120px 6%;
+  background: linear-gradient(180deg, #f9fafb, #eef2ff);
+}
+
+.pl-container {
+  max-width: 1300px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 80px;
+  align-items: center;
+}
+
+/* LEFT */
+.pl-badge {
+  display: inline-block;
+  padding: 6px 14px;
+  border-radius: 999px;
+  background: rgba(99, 102, 241, 0.12);
+  /* background: whitesmoke; */
+  color: #4f46e5;
+  font-size: 12px;
+  font-weight: 600;
+  margin-bottom: 18px;
+}
+
+.pl-left h1 {
+  font-size: 48px;
+  font-weight: 700;
+  color: #0f172a;
+  line-height: 1.15;
+  margin-bottom: 22px;
+}
+
+.pl-left h1 span {
+  color: #4f46e5;
+}
+
+.pl-left p {
+  font-size: 18px;
+  color: #475569;
+  max-width: 520px;
+  line-height: 1.7;
+  margin-bottom: 30px;
+}
+
+.pl-points {
+  list-style: none;
+  padding: 0;
+}
+
+.pl-points li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 14px;
+  font-weight: 600;
+  color: #0f172a;
+}
+
+.pl-points svg {
+  color: #6366f1;
+}
+
+/* RIGHT CARD */
+.pl-card {
+  background: linear-gradient(180deg, #0f172a, #1e293b);
+  border-radius: 26px;
+  padding: 28px;
+  box-shadow: 0 40px 80px rgba(15, 23, 42, 0.45);
+}
+
+.pl-item {
+  background: #f8fafc;
+  border-radius: 18px;
+  padding: 22px;
+  display: flex;
+  gap: 18px;
+  align-items: center;
+  margin-bottom: 18px;
+}
+
+.pl-item:last-child {
+  margin-bottom: 0;
+}
+
+.pl-icon {
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  color: #fff;
+}
+
+.pl-icon.blue {
+  background: #6366f1;
+}
+
+.pl-icon.purple {
+  background: #8b5cf6;
+}
+
+.pl-icon.pink {
+  background: #ec4899;
+}
+
+.pl-icon.gold {
+  background: #f59e0b;
+}
+
+.pl-item h4 {
+  font-size: 16px;
+  font-weight: 700;
+  color: #0f172a;
+  margin-bottom: 4px;
+}
+
+.pl-item p {
+  font-size: 14px;
+  color: #475569;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .pl-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+.pl-card{
+    background-color: whitesmoke;
+}

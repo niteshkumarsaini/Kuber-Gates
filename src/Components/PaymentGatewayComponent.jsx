@@ -1,79 +1,142 @@
 import { motion } from "framer-motion";
 import {
-  FaCreditCard,
-  FaMobileAlt,
-  FaUniversity,
-  FaGlobe,
-  FaLock
-} from "react-icons/fa";
+  CreditCard,
+  Smartphone,
+  Building2,
+  Globe,
+  ShieldCheck,
+  TrendingUp
+} from "lucide-react";
 import "../Styles/PaymentGatewayComponent.css";
-
-const gateways = [
-  {
-    icon: <FaCreditCard />,
-    title: "Card Payments",
-    desc: "Accept all major debit & credit cards with fast and secure processing."
-  },
-  {
-    icon: <FaMobileAlt />,
-    title: "UPI & Wallets",
-    desc: "Support UPI, Google Pay, PhonePe, Paytm and popular wallets."
-  },
-  {
-    icon: <FaUniversity />,
-    title: "Net Banking",
-    desc: "Seamless bank transfers across leading Indian banks."
-  },
-  {
-    icon: <FaGlobe />,
-    title: "International Payments",
-    desc: "Accept global payments with multi-currency support."
-  },
-  {
-    icon: <FaLock />,
-    title: "Secure Transactions",
-    desc: "Enterprise-grade security with PCI-DSS & encryption standards."
-  }
-];
 
 export default function PaymentGatewayComponent() {
   return (
-    <section className="payment-section">
-      <div className="payment-container">
+    <>
+      {/* HERO SECTION */}
+      <section className="pg-section">
+        <div className="pg-container">
+          <div className="pg-hero">
 
-        {/* HEADER */}
-        <motion.div
-          className="payment-header"
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-        >
-          <h2>Powerful Payment Gateway</h2>
-          <p>
-            One unified platform to accept, process, and manage payments
-            securely at scale.
-          </p>
-        </motion.div>
-
-        {/* CARDS */}
-        <div className="payment-grid">
-          {gateways.map((item, index) => (
+            {/* LEFT */}
             <motion.div
-              key={index}
-              className="payment-card"
+              className="pg-left"
               initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: index * 0.1 }}
-              whileHover={{ y: -8 }}
+              transition={{ duration: 0.7 }}
+              viewport={{ once: true }}
             >
-              <div className="payment-icon">{item.icon}</div>
-              <h3>{item.title}</h3>
-              <p>{item.desc}</p>
-            </motion.div>
-          ))}
-        </div>
+              <span className="pg-badge">PAYMENT GATEWAY</span>
 
-      </div>
-    </section>
+              <h1>
+                Accept payments <br />
+                <span>globally & securely</span>
+              </h1>
+
+              <p>
+                KuberGates enables businesses to accept cards, UPI, net banking,
+                and international payments with enterprise-grade security and
+                lightning-fast settlements.
+              </p>
+
+              <div className="pg-actions">
+                <button className="pg-primary">Get Started</button>
+                <button className="pg-secondary">View Docs</button>
+              </div>
+            </motion.div>
+
+            {/* RIGHT – PRODUCT CARD */}
+            <motion.div
+              className="pg-right"
+              initial={{ opacity: 0, y: 60 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.9, ease: "easeOut" }}
+              viewport={{ once: true }}
+            >
+              <div className="pg-card">
+                <div className="pg-card-ambient" />
+
+                <div className="pg-card-ui">
+
+                  <div className="pg-item">
+                    <CreditCard />
+                    <div>
+                      <p>Card Payments</p>
+                      <small>Visa, Mastercard, RuPay & global cards</small>
+                    </div>
+                  </div>
+
+                  <div className="pg-item">
+                    <Smartphone />
+                    <div>
+                      <p>UPI & Wallets</p>
+                      <small>Google Pay, PhonePe, Paytm & more</small>
+                    </div>
+                  </div>
+
+                  <div className="pg-item">
+                    <Building2 />
+                    <div>
+                      <p>Net Banking</p>
+                      <small>100+ banks with real-time confirmation</small>
+                    </div>
+                  </div>
+
+                  <div className="pg-item">
+                    <Globe />
+                    <div>
+                      <p>International Payments</p>
+                      <small>Accept payments from global customers</small>
+                    </div>
+                  </div>
+
+                  <div className="pg-item">
+                    <ShieldCheck />
+                    <div>
+                      <p>Fraud & Risk Protection</p>
+                      <small>AI-based checks & smart routing</small>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </motion.div>
+
+          </div>
+        </div>
+      </section>
+
+      {/* TRUST / FEATURES SECTION */}
+      <section className="pg-trust">
+        <div className="pg-trust-container">
+
+          <div className="pg-trust-item">
+            <ShieldCheck />
+            <h4>Bank-Grade Security</h4>
+            <p>
+              PCI-DSS compliant infrastructure with encryption, tokenization,
+              and secure authentication.
+            </p>
+          </div>
+
+          <div className="pg-trust-item">
+            <Globe />
+            <h4>Global Coverage</h4>
+            <p>
+              Accept payments from multiple countries with local settlement
+              support.
+            </p>
+          </div>
+
+          <div className="pg-trust-item">
+            <TrendingUp />
+            <h4>High Success Rates</h4>
+            <p>
+              Optimized routing and retries ensure maximum transaction success.
+            </p>
+          </div>
+
+        </div>
+      </section>
+    </>
   );
 }
