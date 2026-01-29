@@ -6,6 +6,8 @@ import Navbar from './Components/Navbar'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import Home from './Screens/Home'
 import CryptoPayment from './Screens/Products/CryptoPayment'
+import FiatPayment from './Screens/Products/FiatPayment'
+import PaymentGateway from './Screens/Products/PaymentGateway'
 
 
 function App() {
@@ -17,7 +19,8 @@ function App() {
         <Routes>
           <Route path='/' element={<Home />} />
    <Route path='/products/crypto-payments' element={<CryptoPayment />} />
-
+    <Route path='/products/fiat-payments' element={<FiatPayment />} />
+<Route path='/products/payment-gateway' element={<PaymentGateway />} />
 
 
         </Routes>
