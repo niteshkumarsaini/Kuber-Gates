@@ -1,123 +1,109 @@
-import React from "react";
 import "../Styles/Pricing.css";
- 
-const plans = [
-  {
 
-    name: "Standard",
-
-    price: "1%",
-
-    description: "Crypto payment processing fee",
-
-    features: [
-
-      "No monthly fees",
-
-      "Pay-as-you-go",
-
-      "Weekly settlements",
-
-      "Basic support",
-
-    ],
-
-  },
-
-  {
-
-    name: "Enterprise",
-
-    price: "Custom",
-
-    description: "Tailored value-based pricing",
-
-    features: [
-
-      "Custom settlements",
-
-      "Dedicated account manager",
-
-      "Branded checkout",
-
-      "Developer support",
-
-    ],
-
-  },
-
-];
- 
 export default function Pricing() {
-
   return (
-<div className="pricing-container">
-<section className="pricing-header">
-<h1>Pricing Plans</h1>
-<p>Simple, transparent pricing for any size business.</p>
-</section>
- 
+    <section className="pricing-container">
+
+      {/* HERO */}
+      <div className="pricing-header">
+        <h1>Enterprise-Ready Crypto Payments</h1>
+        <p>
+          Transparent pricing designed for startups, scale-ups, and global
+          enterprises. No hidden fees. No long-term contracts.
+        </p>
+      </div>
+
+      {/* PLANS */}
       <div className="plans-wrapper">
 
-        {plans.map(({ name, price, description, features }) => (
-<div key={name} className="plan-card">
-<h2 className="plan-title">{name}</h2>
-<p className="plan-price">{price}</p>
-<p className="plan-desc">{description}</p>
- 
-            <ul className="plan-features">
+        {/* STANDARD */}
+        <div className="plan-card popular">
+          <span className="badge">Most Popular</span>
+          <h3 className="plan-title">Growth</h3>
+          <p className="plan-price">1%</p>
+          <p className="plan-desc">
+            Per successful transaction — built for fast-growing digital
+            businesses.
+          </p>
 
-              {features.map((f, i) => (
-<li key={i}>{f}</li>
+          <ul className="plan-features">
+            <li>✓ Global crypto & fiat settlement</li>
+            <li>✓ Weekly automated payouts</li>
+            <li>✓ API access & webhooks</li>
+            <li>✓ Fraud monitoring tools</li>
+            <li>✓ Email & chat support</li>
+          </ul>
 
-              ))}
-</ul>
- 
-            <button className="btn-plan">
+          <button className="btn-plan">Start Accepting Payments</button>
+        </div>
 
-              {name === "Enterprise" ? "Contact Sales" : "Get Started"}
-</button>
-</div>
+        {/* ENTERPRISE */}
+        <div className="plan-card">
+          <h3 className="plan-title">Enterprise</h3>
+          <p className="plan-price">Custom</p>
+          <p className="plan-desc">
+            Tailored pricing and infrastructure for large-scale platforms.
+          </p>
 
-        ))}
-</div>
- 
-      <section className="comparison-section">
-<h2>Compare Features</h2>
-<table className="compare-table">
-<thead>
-<tr>
-<th>Feature</th>
-<th>Standard</th>
-<th>Enterprise</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Monthly fee</td>
-<td>0</td>
-<td>0</td>
-</tr>
-<tr>
-<td>Payment fee</td>
-<td>1%</td>
-<td>Custom</td>
-</tr>
-<tr>
-<td>Branded Checkout</td>
-<td>❌</td>
-<td>✅</td>
-</tr>
-<tr>
-<td>Dedicated Manager</td>
-<td>❌</td>
-<td>✅</td>
-</tr>
-</tbody>
-</table>
-</section>
-</div>
+          <ul className="plan-features">
+            <li>✓ Dedicated technical account manager</li>
+            <li>✓ Custom SLAs & uptime guarantees</li>
+            <li>✓ White-label checkout experience</li>
+            <li>✓ Priority compliance onboarding</li>
+            <li>✓ 24/7 premium support</li>
+          </ul>
 
+          <button className="btn-plan secondary">
+            Talk to Sales
+          </button>
+        </div>
+
+      </div>
+
+      {/* COMPARISON */}
+      <div className="comparison-section">
+        <h2>Compare Plans</h2>
+
+        <div className="table-wrapper">
+          <table className="compare-table">
+            <thead>
+              <tr>
+                <th>Features</th>
+                <th>Growth</th>
+                <th>Enterprise</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>API Access</td>
+                <td>✔</td>
+                <td>✔</td>
+              </tr>
+              <tr>
+                <td>Automated Settlements</td>
+                <td>Weekly</td>
+                <td>Custom</td>
+              </tr>
+              <tr>
+                <td>Fraud Detection</td>
+                <td>Standard</td>
+                <td>Advanced</td>
+              </tr>
+              <tr>
+                <td>Dedicated Manager</td>
+                <td>—</td>
+                <td>✔</td>
+              </tr>
+              <tr>
+                <td>Custom Checkout</td>
+                <td>—</td>
+                <td>✔</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+    </section>
   );
-
 }
