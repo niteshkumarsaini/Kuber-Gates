@@ -8,30 +8,32 @@ const GetStarted = () => {
   const toggleForm = () => setIsLogin(!isLogin);
 
   return (
-    <div className={styles.container}>1
+    <div className={styles.container}>
       {/* LEFT FEATURES SECTION */}
       <div className={styles.featuresSection}>
-        <h2 className={styles.featuresTitle}>Why Choose Us?</h2>
+        <div className={styles.featuresInner}>
+          <h2 className={styles.featuresTitle}>Why Choose Us?</h2>
 
-        <div className={styles.featureGrid}>
-          <div className={styles.featureCard}>
-            <h3>Secure Payments</h3>
-            <p>Bank-grade encryption to protect every transaction.</p>
-          </div>
+          <div className={styles.featureGrid}>
+            <div className={styles.featureCard}>
+              <h3>Secure Payments</h3>
+              <p>Bank-grade encryption to protect every transaction.</p>
+            </div>
 
-          <div className={styles.featureCard}>
-            <h3>Real-time Dashboard</h3>
-            <p>Track revenue, refunds, and settlements instantly.</p>
-          </div>
+            <div className={styles.featureCard}>
+              <h3>Real-time Dashboard</h3>
+              <p>Track revenue, refunds, and settlements instantly.</p>
+            </div>
 
-          <div className={styles.featureCard}>
-            <h3>Easy Integration</h3>
-            <p>Developer-friendly APIs & quick onboarding.</p>
-          </div>
+            <div className={styles.featureCard}>
+              <h3>Easy Integration</h3>
+              <p>Developer-friendly APIs & quick onboarding.</p>
+            </div>
 
-          <div className={styles.featureCard}>
-            <h3>24/7 Support</h3>
-            <p>Our experts are always ready to help you.</p>
+            <div className={styles.featureCard}>
+              <h3>24/7 Support</h3>
+              <p>Our experts are always ready to help you.</p>
+            </div>
           </div>
         </div>
       </div>
@@ -39,7 +41,6 @@ const GetStarted = () => {
       {/* RIGHT FORM SECTION */}
       <div className={styles.formSection}>
         <div className={styles.card}>
-          {/* LOGO ON TOP */}
           <img src={logo} alt="Company Logo" className={styles.formLogo} />
 
           <h1 className={styles.title}>
@@ -54,6 +55,7 @@ const GetStarted = () => {
                 className={styles.input}
               />
             )}
+
             <input type="email" placeholder="Email" className={styles.input} />
 
             <input

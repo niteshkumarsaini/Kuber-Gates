@@ -69,9 +69,9 @@ export default function Navbar() {
                       <div className="dropdown-item" onClick={() => goTo("/products/crypto-payments")}>
                         <Wallet /> Accept Crypto Payments
                       </div>
-                      <div className="dropdown-item" onClick={() => goTo("/products/fiat-payments")}>
+                      {/* <div className="dropdown-item" onClick={() => goTo("/products/fiat-payments")}>
                         <CreditCard /> Accept Fiat Payments
-                      </div>
+                      </div> */}
                       <div className="dropdown-item" onClick={() => goTo("/products/payment-gateway")}>
                         <Layers /> Payment Gateway
                       </div>
@@ -88,9 +88,9 @@ export default function Navbar() {
                       <div className="dropdown-item" onClick={() => goTo("/products/subscriptions")}>
                         <Repeat /> Subscriptions
                       </div>
-                      <div className="dropdown-item" onClick={() => goTo("/products/donations")}>
+                      {/* <div className="dropdown-item" onClick={() => goTo("/products/donations")}>
                         <Gift /> Donation Payments
-                      </div>
+                      </div> */}
                       <div className="dropdown-item" onClick={() => goTo("/products/white-label")}>
                         <Layers /> White-Label Payments
                       </div>
