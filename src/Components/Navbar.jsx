@@ -137,7 +137,7 @@ export default function Navbar() {
           {/* STATIC LINKS */}
           <li onClick={() => goTo("/company")}>Company</li>
           <li onClick={() => goTo("/pricing")}>Pricing</li>
-          <li onClick={() => goTo("/blog")}>Blog</li>
+
         </ul>
 
         {/* CTA */}

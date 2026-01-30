@@ -1,0 +1,281 @@
+.inv-section {
+  padding: 120px 6%;
+  background: linear-gradient(180deg, #f9fbff, #eef2ff);
+}
+
+.inv-container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* HEADER */
+.inv-header {
+  text-align: center;
+  max-width: 720px;
+  margin: 0 auto 80px;
+}
+
+.inv-badge {
+  display: inline-block;
+  padding: 6px 14px;
+  background: rgba(99, 102, 241, 0.12);
+  color: #4f46e5;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+.inv-header h2 {
+  font-size: 42px;
+  color: #0f172a;
+  margin-bottom: 14px;
+}
+
+.inv-header p {
+  font-size: 18px;
+  color: #475569;
+  line-height: 1.6;
+}
+
+/* GRID */
+.inv-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 70px;
+  align-items: center;
+}
+
+/* STEPS */
+.inv-step {
+  display: flex;
+  gap: 18px;
+  margin-bottom: 34px;
+}
+
+.inv-step svg {
+  font-size: 28px;
+  color: #6366f1;
+  margin-top: 4px;
+}
+
+.inv-step h4 {
+  font-size: 18px;
+  color: #0f172a;
+  margin-bottom: 6px;
+}
+
+.inv-step p {
+  font-size: 15px;
+  color: #475569;
+  line-height: 1.6;
+}
+
+/* RIGHT CARD – LIGHT THEME */
+.inv-card {
+  background: rgba(255, 255, 255, 0.85);
+  border-radius: 26px;
+  padding: 36px;
+  border: 1px solid rgba(99, 102, 241, 0.15);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 30px 60px rgba(15, 23, 42, 0.12);
+}
+
+.inv-card-item {
+  display: flex;
+  gap: 16px;
+  padding: 18px 0;
+  border-bottom: 1px solid rgba(99, 102, 241, 0.15);
+}
+
+.inv-card-item:last-child {
+  border-bottom: none;
+}
+
+.inv-card-item svg {
+  font-size: 22px;
+  color: #6366f1;
+  margin-top: 4px;
+}
+
+.inv-card-item h5 {
+  color: #0f172a;
+  font-size: 16px;
+  margin-bottom: 4px;
+}
+
+.inv-card-item p {
+  font-size: 14px;
+  color: #475569;
+  line-height: 1.5;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .inv-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .inv-card {
+    margin-top: 30px;
+  }
+}
+.inv-container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* HERO */
+.inv-hero {
+  padding: 120px 6% 80px;
+  background: linear-gradient(180deg, #f9fbff, #eef2ff);
+  text-align: center;
+}
+
+.inv-badge {
+  background: rgba(99,102,241,.12);
+  color: #4f46e5;
+  padding: 6px 14px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.inv-hero h1 {
+  font-size: 48px;
+  margin: 18px 0;
+  color: #0f172a;
+}
+
+.inv-hero p {
+  max-width: 620px;
+  margin: auto;
+  font-size: 18px;
+  color: #475569;
+}
+
+.inv-actions {
+  margin-top: 32px;
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+
+.inv-primary {
+  background: linear-gradient(135deg, #ec4899, #f472b6);
+  border: none;
+  padding: 14px 28px;
+  color: #fff;
+  border-radius: 14px;
+}
+
+.inv-secondary {
+  border: 1px solid #c7d2fe;
+  padding: 14px 26px;
+  border-radius: 14px;
+  background: transparent;
+  color: #4f46e5;
+}
+
+/* FEATURES */
+.inv-features {
+  padding: 90px 6%;
+}
+
+.inv-feature-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 32px;
+}
+
+.inv-feature {
+  text-align: center;
+}
+
+.inv-feature svg {
+  font-size: 30px;
+  color: #6366f1;
+  margin-bottom: 12px;
+}
+
+/* WORKFLOW */
+.inv-workflow {
+  padding: 100px 6%;
+  background: #fff;
+}
+
+.inv-workflow-grid {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 70px;
+  align-items: center;
+}
+
+.inv-step {
+  display: flex;
+  gap: 16px;
+  margin-top: 28px;
+}
+
+.inv-step svg {
+  color: #6366f1;
+  font-size: 24px;
+}
+
+/* PREVIEW CARD */
+.inv-preview {
+  background: #f8fafc;
+  border-radius: 24px;
+  padding: 32px;
+  box-shadow: 0 30px 60px rgba(15,23,42,.12);
+}
+
+.inv-preview-row {
+  display: flex;
+  justify-content: space-between;
+  margin: 16px 0;
+}
+
+.inv-status {
+  color: #f59e0b;
+  font-weight: 600;
+}
+
+.inv-preview-btn {
+  width: 100%;
+  margin-top: 20px;
+  padding: 14px;
+  background: #6366f1;
+  color: #fff;
+  border: none;
+  border-radius: 12px;
+}
+
+/* CTA */
+.inv-cta {
+  padding: 100px 6%;
+}
+
+.inv-cta-box {
+  background: linear-gradient(135deg, #eef2ff, #fdf4ff);
+  border-radius: 28px;
+  padding: 60px;
+  text-align: center;
+}
+
+.inv-cta-box button {
+  margin-top: 22px;
+  padding: 14px 32px;
+  border-radius: 14px;
+  background: #6366f1;
+  color: #fff;
+  border: none;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .inv-feature-grid,
+  .inv-workflow-grid {
+    grid-template-columns: 1fr;
+  }
+}
