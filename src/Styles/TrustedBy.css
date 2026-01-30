@@ -1,0 +1,118 @@
+.trustedby-section {
+  width: 100%;
+  background-color: #fafaf8; /* Off-white / Ivory */
+  padding: 60px 0;
+}
+
+.trustedby-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 24px;
+  text-align: center;
+}
+
+.trustedby-title {
+  font-size: 16px;
+  color: #6b7280; /* Soft grey */
+  margin-bottom: 40px;
+  letter-spacing: 0.3px;
+  font-weight: 500;
+}
+
+/* Counter Section */
+.trustedby-counter h2 {
+  font-size: 48px;
+  color: #1e3a8a; /* Soft Blue */
+  margin-bottom: 12px;
+  font-weight: 700;
+}
+
+.trustedby-counter p {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.6;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Optional animation for scale effect */
+.trustedby-counter h2 {
+  animation: pop 1s ease-out forwards;
+}
+
+@keyframes pop {
+  0% { transform: scale(0); opacity: 0; }
+  50% { transform: scale(1.2); opacity: 1; }
+  100% { transform: scale(1); }
+}
+
+/* Responsive */
+@media (max-width: 640px) {
+  .trustedby-counter h2 {
+    font-size: 36px;
+  }
+
+  .trustedby-counter p {
+    font-size: 14px;
+  }
+}
+.trustedby-section {
+  width: 100%;
+  background-color: #fafaf8; /* Off-white / Ivory */
+  padding: 80px 20px;
+}
+
+.trustedby-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 0 24px;
+}
+
+.trustedby-title {
+  font-size: 18px;
+  color: #6b7280; /* Soft grey */
+  margin-bottom: 50px;
+  font-weight: 500;
+  letter-spacing: 0.3px;
+}
+
+/* Counters Section */
+.trustedby-counters {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 40px;
+  align-items: center;
+}
+
+.counter-box h2 {
+  font-size: 48px;
+  color: #1e3a8a; /* Soft Blue */
+  margin-bottom: 12px;
+  font-weight: 700;
+  animation: pop 1s ease-out forwards;
+}
+
+.counter-box p {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* Pop animation for numbers */
+@keyframes pop {
+  0% { transform: scale(0); opacity: 0; }
+  50% { transform: scale(1.2); opacity: 1; }
+  100% { transform: scale(1); }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .counter-box h2 {
+    font-size: 36px;
+  }
+
+  .counter-box p {
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,127 @@
+/* SECTION */
+.premium-feature {
+  background-color: #fdfaf7; /* Off-White / Ivory */
+  padding: 120px 20px;
+}
+
+/* LAYOUT */
+.premium-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 70px;
+  align-items: center;
+}
+
+/* CONTENT */
+.premium-content {
+  padding-right: 20px;
+}
+
+/* ICONS */
+.premium-icons {
+  display: flex;
+  gap: 14px;
+  font-size: 26px;
+  color: #4b7cf3; /* Soft Blue */
+  margin-bottom: 20px;
+}
+
+/* HEADING */
+.premium-content h2 {
+  font-size: 40px;
+  font-weight: 700;
+  color: #0f1c3f; /* Dark Blue */
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+
+.premium-content h2 span {
+  color: #4b7cf3; /* Soft Blue */
+}
+
+/* DESCRIPTION */
+.premium-desc {
+  font-size: 16px;
+  color: #606060; /* Soft Grey */
+  line-height: 1.7;
+  margin-bottom: 28px;
+  max-width: 520px;
+}
+
+/* LIST */
+.premium-list {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 40px;
+}
+
+.premium-list li {
+  font-size: 15px;
+  color: #0f1c3f;
+  margin-bottom: 12px;
+  padding-left: 26px;
+  position: relative;
+}
+
+.premium-list li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: #4b7cf3;
+  font-weight: bold;
+}
+
+/* CTA */
+.premium-cta {
+  padding: 14px 34px;
+  border-radius: 999px;
+  background: linear-gradient(135deg, #f3b6c6, #e7a2b5); /* Rose Gold / Light Pink */
+  border: none;
+  color: #0f1c3f;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.35s ease;
+  box-shadow: 0 12px 28px rgba(231, 162, 181, 0.45);
+}
+
+.premium-cta:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 18px 40px rgba(231, 162, 181, 0.6);
+}
+
+/* IMAGE */
+.premium-image {
+  display: flex;
+  justify-content: center;
+}
+
+.premium-image img {
+  width: 100%;
+  max-width: 460px;
+  border-radius: 26px;
+  box-shadow: 0 30px 70px rgba(15, 28, 63, 0.15);
+  transition: transform 0.4s ease;
+}
+
+.premium-image img:hover {
+  transform: scale(1.03);
+}
+
+/* RESPONSIVE */
+@media (max-width: 992px) {
+  .premium-wrapper {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .premium-content {
+    padding-right: 0;
+  }
+
+  .premium-list li {
+    text-align: left;
+  }
+}

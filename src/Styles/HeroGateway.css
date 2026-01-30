@@ -1,0 +1,103 @@
+.gateway-hero {
+  background: #ffffff;
+  padding: 110px 80px;
+}
+
+.gateway-container {
+  max-width: 1250px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  align-items: center;
+  gap: 80px;
+}
+
+/* LEFT */
+.gateway-left h1 {
+  font-size: 52px;
+  font-weight: 700;
+  line-height: 1.15;
+  color: #0b1020;
+}
+
+.gateway-left h3 {
+  margin-top: 18px;
+  font-size: 20px;
+  font-weight: 500;
+  color: #5a5f73;
+}
+
+.gateway-left p {
+  margin-top: 22px;
+  font-size: 16px;
+  line-height: 1.7;
+  color: #6b7085;
+  max-width: 520px;
+}
+
+.gateway-btn {
+  margin-top: 34px;
+  padding: 14px 26px;
+  border-radius: 14px;
+  background: #635bff;
+  color: white;
+  font-size: 15px;
+  font-weight: 600;
+  border: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.gateway-btn span {
+  font-size: 18px;
+  transition: transform 0.3s ease;
+}
+
+.gateway-btn:hover {
+  background: #5148e5;
+  transform: translateY(-2px);
+}
+
+.gateway-btn:hover span {
+  transform: translateX(4px);
+}
+
+/* RIGHT */
+.gateway-right {
+  background: #f5f6fa;
+  border-radius: 26px;
+  height: 360px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.06);
+}
+
+.coin-wrapper {
+  position: relative;
+}
+
+.coin {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  background: #635bff;
+  color: white;
+  font-size: 64px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 16px 32px rgba(99, 91, 255, 0.35);
+}
+
+.coin.usd {
+  position: absolute;
+  right: -70px;
+  top: 40px;
+  background: #4f46e5;
+}

@@ -1,0 +1,139 @@
+/* MAIN CONTAINER */
+.container {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  background: #fff5f7;
+}
+
+/* ============ LEFT FEATURES ============ */
+
+.featuresSection {
+  padding: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.featuresTitle {
+  font-size: 2.4rem;
+  color: #c04b6b;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+
+.featureGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+
+.featureCard {
+  background: white;
+  padding: 1.6rem;
+  border-radius: 18px;
+  box-shadow: 0 10px 25px rgba(255, 160, 180, 0.25);
+}
+
+.featureCard h3 {
+  color: #b23c5a;
+  font-size: 1.2rem;
+  margin-bottom: 0.4rem;
+}
+
+.featureCard p {
+  color: #7a4252;
+  font-size: 0.95rem;
+}
+
+/* ============ RIGHT FORM SIDE ============ */
+
+.formSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* CARD */
+.card {
+  background: white;
+  padding: 3rem 2.8rem;
+  max-width: 420px;
+  width: 100%;
+  border-radius: 20px;
+  box-shadow: 0 14px 34px rgba(255, 170, 190, 0.35);
+  text-align: center;
+}
+
+/* LOGO ON FORM */
+.formLogo {
+  width: 90px;
+  margin-bottom: 1rem;
+}
+
+/* TITLE */
+.title {
+  color: #c04b6b;
+  font-size: 1.9rem;
+  font-weight: 700;
+}
+
+/* FORM */
+.form {
+  margin-top: 1.4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+/* INPUT */
+.input {
+  padding: 0.9rem 1rem;
+  border-radius: 10px;
+  border: 2px solid #ffd1db;
+  font-size: 1rem;
+}
+
+.input:focus {
+  border-color: #f39cb3;
+  outline: none;
+}
+
+/* BUTTON */
+.submitBtn {
+  margin-top: 0.6rem;
+  padding: 0.95rem;
+  background: #f6a5ba;
+  color: white;
+  border-radius: 12px;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.submitBtn:hover {
+  background: #ee8fa8;
+}
+
+/* TOGGLE */
+.toggleText {
+  margin-top: 1.2rem;
+  color: #8f4b5e;
+}
+
+.toggleLink {
+  color: #c04b6b;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* 📱 MOBILE */
+@media (max-width: 900px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+
+  .featuresSection {
+    display: none;
+  }
+}

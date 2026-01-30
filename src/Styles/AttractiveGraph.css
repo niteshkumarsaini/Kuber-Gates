@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap");
+
+.graph-section {
+  font-family: "Inter", sans-serif;
+  padding: 90px 6%;
+  background: linear-gradient(180deg, #fbf9f4 0%, #ffffff 100%);
+}
+
+/* CARD */
+.graph-card {
+  max-width: 1100px;
+  margin: auto;
+  background: rgba(255, 255, 255, 0.92);
+  border-radius: 28px;
+  padding: 36px 40px;
+  box-shadow: 0 40px 90px rgba(0, 0, 0, 0.12);
+  backdrop-filter: blur(20px);
+}
+
+/* HEADER */
+.graph-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.graph-header h3 {
+  font-size: 22px;
+  font-weight: 600;
+  color: #0f172a;
+}
+
+.graph-header p {
+  font-size: 14px;
+  color: #64748b;
+  margin-top: 4px;
+}
+
+.graph-badge {
+  background: linear-gradient(135deg, #dbeafe, #bfdbfe);
+  color: #1e40af;
+  padding: 8px 14px;
+  border-radius: 999px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+/* STATS */
+.graph-stats {
+  margin-top: 26px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  text-align: center;
+}
+
+.graph-stats strong {
+  font-size: 20px;
+  font-weight: 600;
+  color: #0f172a;
+}
+
+.graph-stats span {
+  display: block;
+  margin-top: 4px;
+  font-size: 12px;
+  color: #64748b;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .graph-card {
+    padding: 28px 24px;
+  }
+
+  .graph-stats {
+    grid-template-columns: 1fr;
+  }
+}

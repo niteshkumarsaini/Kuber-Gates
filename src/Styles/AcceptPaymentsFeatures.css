@@ -1,0 +1,74 @@
+:root {
+  --ivory: #fafaf6;
+  --blue: #4a90d9;
+  --navy: #0f1f3d;
+  --grey: #64748b;
+  --card: #ffffff;
+  --border: rgba(15,31,61,0.08);
+}
+
+/* SECTION */
+.ac-features-section {
+  background: var(--ivory);
+  padding: 120px 8%;
+}
+
+.ac-features-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  background: var(--card);
+  border-radius: 28px;
+  padding: 90px 80px;
+  box-shadow: 0 30px 60px rgba(15,31,61,0.08);
+}
+
+/* HEADINGS */
+.ac-features-title {
+  text-align: center;
+  font-size: 42px;
+  line-height: 1.2;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  color: var(--navy);
+}
+
+.ac-features-subtitle {
+  margin: 18px auto 0;
+  max-width: 700px;
+  text-align: center;
+  font-size: 17px;
+  line-height: 1.7;
+  color: var(--grey);
+}
+
+/* GRID */
+.ac-features-grid {
+  margin-top: 70px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 60px;
+}
+
+/* CARD */
+.ac-feature-card {
+  text-align: center;
+  padding: 0 20px;
+}
+
+.ac-feature-card svg {
+  color: var(--blue);
+}
+
+.ac-feature-card h3 {
+  margin-top: 22px;
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--navy);
+}
+
+.ac-feature-card p {
+  margin-top: 10px;
+  font-size: 15px;
+  line-height: 1.6;
+  color: var(--grey);
+}

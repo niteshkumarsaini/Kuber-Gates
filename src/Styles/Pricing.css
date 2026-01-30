@@ -1,0 +1,249 @@
+/* ================= ROOT ================= */
+
+.pricing-container {
+  background: linear-gradient(180deg, #faf7f2 0%, #ffffff 60%);
+  min-height: 100vh;
+  padding: 6rem 1.5rem 6rem;
+  font-family: "Inter", system-ui, sans-serif;
+  color: #24324a;
+}
+
+/* ================= HERO ================= */
+
+.pricing-header {
+  text-align: center;
+  max-width: 880px;
+  margin: 0 auto 4.5rem;
+}
+
+.pricing-header h1 {
+  font-size: 3.1rem;
+  font-weight: 900;
+  color: #1e2f4f;
+  letter-spacing: -0.03em;
+}
+
+.pricing-header p {
+  font-size: 1.15rem;
+  color: #66748c;
+  margin-top: 0.8rem;
+}
+
+/* ================= PLANS ================= */
+
+.plans-wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 3.5rem;
+  flex-wrap: wrap;
+  margin-bottom: 6rem;
+}
+
+.plan-card {
+  background: #ffffff;
+  border-radius: 28px;
+  padding: 3.4rem 2.8rem;
+  width: 350px;
+  text-align: center;
+  position: relative;
+  box-shadow:
+    0 28px 55px rgba(30, 80, 160, 0.12),
+    0 4px 12px rgba(0, 0, 0, 0.04);
+  transition: all 0.35s ease;
+  border: 1px solid #e6ecf5;
+}
+
+.plan-card:hover {
+  transform: translateY(-12px);
+  box-shadow:
+    0 40px 90px rgba(30, 80, 160, 0.22),
+    0 10px 20px rgba(0, 0, 0, 0.06);
+}
+
+/* POPULAR */
+
+.plan-card.popular {
+  border: 2px solid #d7e4f6;
+}
+
+/* BADGE */
+
+.badge {
+  position: absolute;
+  top: -16px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: linear-gradient(135deg, #f1b2c1, #e59aaa);
+  color: white;
+  padding: 0.45rem 1.5rem;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+
+/* TEXT */
+
+.plan-title {
+  font-size: 1.8rem;
+  font-weight: 800;
+  color: #20355f;
+}
+
+.plan-price {
+  font-size: 2.6rem;
+  font-weight: 900;
+  color: #1e2f4f;
+  margin: 0.6rem 0;
+}
+
+.plan-desc {
+  color: #6a7a93;
+  margin-bottom: 2rem;
+}
+
+/* FEATURES */
+
+.plan-features {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 2.4rem;
+  text-align: left;
+}
+
+.plan-features li {
+  margin-bottom: 0.8rem;
+  font-size: 0.96rem;
+  color: #4c5f7c;
+}
+
+/* BUTTONS */
+
+.btn-plan {
+  width: 100%;
+  background: linear-gradient(135deg, #f1b2c1, #e59aaa);
+  padding: 1.1rem;
+  border-radius: 20px;
+  border: none;
+  font-size: 1.05rem;
+  color: white;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-plan:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 16px 34px rgba(229, 154, 170, 0.55);
+}
+
+.btn-plan.secondary {
+  background: linear-gradient(135deg, #e4ebf6, #d6deee);
+  color: #20355f;
+}
+
+/* ================= COMPARISON ================= */
+
+.comparison-section h2 {
+  font-size: 2.4rem;
+  font-weight: 900;
+  color: #1e2f4f;
+  margin-bottom: 2.4rem;
+  text-align: center;
+}
+
+.table-wrapper {
+  overflow-x: auto;
+}
+
+.compare-table {
+  width: 100%;
+  max-width: 880px;
+  margin: auto;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 22px;
+  overflow: hidden;
+  box-shadow: 0 28px 60px rgba(30, 80, 160, 0.14);
+}
+
+.compare-table th,
+.compare-table td {
+  padding: 1.15rem 1.5rem;
+  border-bottom: 1px solid #edf2f8;
+}
+
+.compare-table th {
+  background: #eef4ff;
+  color: #20355f;
+  font-weight: 800;
+}
+
+.compare-table tbody tr:hover {
+  background: #f7faff;
+}
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 768px) {
+  .pricing-header h1 {
+    font-size: 2.4rem;
+  }
+
+  .plan-card {
+    width: 100%;
+    max-width: 400px;
+  }
+}
+
+.pricing-header{
+  margin-top: 45px;
+  margin-bottom: 60px;
+}
+.pricing-header h1{
+  /* border: 1px solid red; */
+  font-size: 40px;
+}
+.pricing-header p{
+  /* border: 2px solid red; */
+  font-size: 13px;
+}
+.plan-card.popular{
+  /* border: 2px solid red; */
+}
+.plan-card{
+  /* border: 2px solid green; */
+}
+
+.plan-title{
+/* border: 2px solid orange; */
+font-size: 25px;
+}
+.plan-price{
+/* border: 2px solid skyblue; */
+font-size: 25px;
+
+
+}
+.plan-desc{
+  /* border: 2px solid blue; */
+  font-size: 15px;
+
+}
+.plan-features li{
+  /* border: 2px solid yellow; */
+  font-size: 14px;
+}
+.comparison-section h2{
+  /* border: 2px solid purple; */
+    font-size: 40px;
+}
+
+
+.compare-table thead tr th{
+  /* border: 2px solid seagreen; */
+  font-size: 15px;
+}
+.compare-table tbody tr{
+  /* border: 2px solid slateblue; */
+  font-size: 14px;
+}

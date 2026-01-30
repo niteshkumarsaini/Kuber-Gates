@@ -1,0 +1,174 @@
+/* ===============================
+   SECTION BASE
+================================ */
+.flow-section {
+  position: relative;
+  background: linear-gradient(180deg, #f9fafb 0%, #ffffff 100%);
+  padding: 100px 20px;
+  overflow: hidden;
+}
+
+/* BACKGROUND GLOW */
+.flow-glow {
+  position: absolute;
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(
+    circle,
+    rgba(99, 102, 241, 0.18),
+    transparent 70%
+  );
+  top: -200px;
+  right: -200px;
+  filter: blur(80px);
+  pointer-events: none;
+}
+
+/* ===============================
+   WRAPPER
+================================ */
+.flow-wrapper {
+  max-width: 1200px;
+  margin: auto;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+/* ===============================
+   HEADER
+================================ */
+.flow-badge {
+  display: inline-block;
+  padding: 6px 14px;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #6366f1;
+  background: rgba(99, 102, 241, 0.1);
+  border-radius: 999px;
+  margin-bottom: 16px;
+}
+
+.flow-header h2 {
+  font-size: 48px;
+  font-weight: 600;
+  color: #0f172a;
+  line-height: 1.15;
+  margin-bottom: 18px;
+}
+
+.flow-header p {
+  font-size: 18px;
+  color: #475569;
+  max-width: 760px;
+  margin: 0 auto 40px;
+  line-height: 1.7;
+}
+
+/* CTA */
+.flow-cta {
+  padding: 15px 32px;
+  border-radius: 14px;
+  border: none;
+  background: linear-gradient(135deg, #6366f1, #8b5cf6);
+  color: #fff;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.flow-cta:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 18px 40px rgba(99, 102, 241, 0.4);
+}
+
+/* ===============================
+   CARDS GRID
+================================ */
+.flow-cards {
+  margin-top: 90px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+
+/* CARD */
+.flow-card {
+  background: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(18px);
+  border-radius: 22px;
+  padding: 42px 32px;
+  text-align: left;
+  box-shadow:
+    0 30px 60px rgba(15, 23, 42, 0.08),
+    inset 0 0 0 1px rgba(255, 255, 255, 0.6);
+  transition: box-shadow 0.3s ease;
+  position: relative;
+  height: 230px;
+}
+
+/* GRADIENT BORDER */
+.flow-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 22px;
+  padding: 1px;
+  background: linear-gradient(
+    135deg,
+    rgba(99, 102, 241, 0.8),
+    rgba(139, 92, 246, 0.6)
+  );
+  -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
+}
+
+.flow-card h3 {
+  font-size: 21px;
+  font-weight: 600;
+  color: #0f172a;
+  margin-bottom: 12px;
+}
+
+.flow-card p {
+  font-size: 15px;
+  color: #475569;
+  line-height: 1.65;
+}
+
+/* STEP TAG */
+.flow-step {
+  font-size: 13px;
+  font-weight: 600;
+  color: #6366f1;
+}
+
+/* ===============================
+   RESPONSIVE
+================================ */
+@media (max-width: 1024px) {
+  .flow-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .flow-header h2 {
+    font-size: 38px;
+  }
+}
+
+@media (max-width: 640px) {
+  .flow-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .flow-header h2 {
+    font-size: 30px;
+  }
+}

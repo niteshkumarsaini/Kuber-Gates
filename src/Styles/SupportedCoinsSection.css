@@ -1,0 +1,128 @@
+/* SECTION */
+.supported-coins {
+  background: linear-gradient(180deg, #ffffff 0%, #fdfaf7 100%);
+  padding: 50px 20px;
+  overflow: hidden;
+  /* border: 2px solid skyblue; */
+}
+
+.supported-container {
+  max-width: 1200px;
+  margin: auto;
+  text-align: center;
+  /* border: 2px solid blue; */
+}
+
+/* TITLE */
+.supported-container h2 {
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: #0f1c3f;
+  margin-bottom: 10px;
+  /* border: 2px solid red; */
+}
+
+/* FADE IN */
+.fade-in {
+  animation: fadeUp 1s ease forwards;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* MARQUEE WRAPPER */
+.coins-marquee {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+/* MOVING TRACK */
+.coins-track {
+  display: flex;
+  gap: 24px;
+  width: max-content;
+  animation: scrollLeft 35s linear infinite;
+}
+
+/* SLOW RIGHT → LEFT */
+@keyframes scrollLeft {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+/* COIN CARD */
+.coin-card {
+  width: 68px;
+  height: 68px;
+  border-radius: 18px;
+  background: rgba(246, 247, 251, 0.9);
+  backdrop-filter: blur(6px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 
+    transform 0.35s ease,
+    box-shadow 0.35s ease,
+    background 0.35s ease;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.06);
+}
+
+/* ICON */
+.coin-card img {
+  width: 34px;
+  height: 34px;
+  object-fit: contain;
+}
+
+/* HOVER – PREMIUM FEEL */
+.coin-card:hover {
+  transform: translateY(-8px) scale(1.05);
+  background: #eef2ff;
+  box-shadow: 0 20px 40px rgba(75, 124, 243, 0.18);
+}
+
+/* PAUSE ANIMATION ON HOVER */
+.coins-marquee:hover .coins-track {
+  animation-play-state: paused;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .coin-card {
+    width: 58px;
+    height: 58px;
+  }
+
+  .coin-card img {
+    width: 28px;
+    height: 28px;
+  }
+}
+/* SUBTITLE */
+.supported-subtitle {
+  max-width: 620px;
+  margin: 12px auto 55px;
+  font-size: 1rem;
+  color: #606060;
+  line-height: 1.6;
+  /* border: 2px solid orange; */
+}
+
+/* STAGGERED FADE */
+.fade-in-delay {
+  animation: fadeUp 1.2s ease forwards;
+  animation-delay: 0.2s;
+}
