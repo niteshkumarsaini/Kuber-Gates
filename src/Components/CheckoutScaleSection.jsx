@@ -47,16 +47,16 @@ export default function CheckoutScaleSection() {
           transition={{ duration: 0.9, ease: "easeOut" }}
           viewport={{ once: true }}
         >
-          <div className="checkout-card-pro">
+          <div className="pd-checkout-card-pro">
 
             {/* background image texture */}
-            <img src={checkoutBg} alt="" className="card-bg-image" />
+            <img src={checkoutBg} alt="" className="pd-card-bg-image" />
 
             {/* ambient gradient */}
-            <div className="card-ambient" />
+            <div className="pd-card-ambient" />
 
             {/* content */}
-         <div className="card-ui">
+         <div className="pd-card-ui">
   <motion.div
     className="checkout-item primary"
     whileHover={{ scale: 1.03 }}

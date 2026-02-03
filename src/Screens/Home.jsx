@@ -33,7 +33,7 @@ const Home = () => {
     <TrustedBy/>
     <PaymentFlow/>
     <ComplianceSection/>
-    {/* <HeroGateway/> */}
+    <HeroGateway/>
     <GatewayFeatures/>
   <SecurityTransparency/>
     <CryptoCTA/>

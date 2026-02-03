@@ -27,8 +27,8 @@ const PaymentFlowSection = () => {
           </ul>
 
           <div className="payment-actions">
-            <button className="btn-primary">Get Started</button>
-            <button className="btn-outline">View Documentation</button>
+            <button className="btn-primary pa-btn">Get Started</button>
+            <button className="btn-outline pa-btn">View Documentation</button>
           </div>
         </div>
 

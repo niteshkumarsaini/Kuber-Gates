@@ -3,11 +3,9 @@ import { motion, AnimatePresence } from "framer-motion";
 import {
   ChevronDown,
   Wallet,
-  CreditCard,
-  Link2, 
+  Link2,
   FileText,
   Repeat,
-  Gift,
   Layers,
   Globe,
   RotateCcw,
@@ -21,12 +19,8 @@ export default function Navbar() {
   const [open, setOpen] = useState(null);
   const navigate = useNavigate();
 
-  const redirectToHome = () => {
-    navigate("/");
-  };
-
   const goTo = (path) => {
-    setOpen(null); // close dropdown
+    setOpen(null);
     navigate(path);
   };
 
@@ -39,12 +33,12 @@ export default function Navbar() {
           <img
             src={logo}
             alt="Kuber Gates"
-            onClick={redirectToHome}
+            onClick={() => goTo("/")}
             style={{ cursor: "pointer" }}
           />
         </div>
 
-        {/* NAV LINKS */}
+        {/* DESKTOP NAV */}
         <ul className="navbar-links">
 
           {/* PRODUCTS */}
@@ -64,14 +58,10 @@ export default function Navbar() {
                 >
                   <div className="dropdown-grid">
 
-                    {/* COLUMN 1 */}
                     <div className="dropdown-column">
                       <div className="dropdown-item" onClick={() => goTo("/products/crypto-payments")}>
                         <Wallet /> Accept Crypto Payments
                       </div>
-                      {/* <div className="dropdown-item" onClick={() => goTo("/products/fiat-payments")}>
-                        <CreditCard /> Accept Fiat Payments
-                      </div> */}
                       <div className="dropdown-item" onClick={() => goTo("/products/payment-gateway")}>
                         <Layers /> Payment Gateway
                       </div>
@@ -83,14 +73,10 @@ export default function Navbar() {
                       </div>
                     </div>
 
-                    {/* COLUMN 2 */}
                     <div className="dropdown-column">
                       <div className="dropdown-item" onClick={() => goTo("/products/subscriptions")}>
                         <Repeat /> Subscriptions
                       </div>
-                      {/* <div className="dropdown-item" onClick={() => goTo("/products/donations")}>
-                        <Gift /> Donation Payments
-                      </div> */}
                       <div className="dropdown-item" onClick={() => goTo("/products/white-label")}>
                         <Layers /> White-Label Payments
                       </div>
@@ -134,13 +120,11 @@ export default function Navbar() {
             </AnimatePresence>
           </li>
 
-          {/* STATIC LINKS */}
           <li onClick={() => goTo("/company")}>Company</li>
           <li onClick={() => goTo("/pricing")}>Pricing</li>
-
         </ul>
 
-        {/* CTA */}
+        {/* DESKTOP CTA */}
         <div className="navbar-cta">
           <button className="btn-login" onClick={() => goTo("/login")}>
             Login
@@ -150,7 +134,51 @@ export default function Navbar() {
           </button>
         </div>
 
+        {/* MOBILE HAMBURGER */}
+        <div
+          className="mobile-menu-btn"
+          onClick={() => setOpen(open === "mobile" ? null : "mobile")}
+        >
+          <span />
+          <span />
+          <span />
+        </div>
       </div>
+
+      {/* MOBILE MENU (ALL LINKS INCLUDED) */}
+      <AnimatePresence>
+        {open === "mobile" && (
+          <motion.div
+            className="mobile-menu"
+            initial={{ opacity: 0, y: -8 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -8 }}
+          >
+            {/* PRODUCTS */}
+            <div onClick={() => goTo("/products/crypto-payments")}>Accept Crypto Payments</div>
+            <div onClick={() => goTo("/products/payment-gateway")}>Payment Gateway</div>
+            <div onClick={() => goTo("/products/payment-links")}>Payment Links</div>
+            <div onClick={() => goTo("/products/invoices")}>Invoices</div>
+            <div onClick={() => goTo("/products/subscriptions")}>Subscriptions</div>
+            <div onClick={() => goTo("/products/white-label")}>White-Label Payments</div>
+            <div onClick={() => goTo("/products/multi-currency")}>Multi-Currency Support</div>
+            <div onClick={() => goTo("/products/refunds")}>Refunds & Partial Refunds</div>
+
+            {/* DEVELOPERS */}
+            <div onClick={() => goTo("/developers/api-docs")}>API Docs</div>
+            <div onClick={() => goTo("/developers/sdks")}>SDKs</div>
+
+            {/* STATIC */}
+            <div onClick={() => goTo("/company")}>Company</div>
+            <div onClick={() => goTo("/pricing")}>Pricing</div>
+            <div onClick={() => goTo("/login")}>Login</div>
+
+            <div className="mobile-cta" onClick={() => goTo("/get-started")}>
+              Get Started
+            </div>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </header>
   );
 }

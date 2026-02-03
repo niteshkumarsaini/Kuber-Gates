@@ -4,11 +4,8 @@
     hsla(320, 9%, 94%, 0.831) 0%,
     #eae7e7d2 100%
   );
-  padding:0 0;
+  padding:0 40px;
   /* border: 2px solid orange; */
-  /* border: 1px solid rgba(230, 226, 226, 0.855); */
-  
-
 }
 
 
@@ -19,8 +16,9 @@
   flex-direction: column;
   gap: 0px;
   gap:0px;
-  /* border: 2px solid blue; */
-  /* border: 2px solid red; */
+  /* border: 2px solid blue;
+  border: 2px solid red; */
+  padding:0px;
 }
 
 
@@ -164,5 +162,76 @@
 
   .gateway-text h2 {
     font-size: 34px;
+  }
+}
+/* ===============================
+   MOBILE OPTIMIZATION
+================================ */
+@media (max-width: 480px) {
+
+  /* Section spacing */
+  .gateway-section {
+    padding-top: 10px;
+
+    padding-bottom: 10px;
+  }
+
+  /* Block layout */
+  .gateway-block {
+    gap: 40px;
+    margin-top: 0;
+  }
+
+  /* Text */
+  .gateway-kicker {
+    font-size: 11px;
+    margin-bottom: 10px;
+  }
+
+  .gateway-text h2 {
+    font-size: 24px;      
+    line-height: 1.25;
+  }
+
+  .gateway-text p {
+    font-size: 14px;
+    line-height: 1.6;
+    max-width: 100%;
+  }
+
+  /* Button */
+  .gateway-btn {
+    padding: 12px 20px;
+    font-size: 14px;
+    margin-top: 24px;
+  }
+
+  /* Visual wrapper */
+  .gateway-visual {
+    padding: 20px;
+    border-radius: 20px;
+  }
+
+  .gateway-visual.glass {
+    height: auto;         
+    min-height: unset;
+  }
+
+  /* Image */
+  .gateway-visual img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 14px;
+  }
+}
+
+/* Ultra small phones */
+@media (max-width: 360px) {
+  .gateway-text h2 {
+    font-size: 22px;
+  }
+
+  .gateway-text p {
+    font-size: 13.5px;
   }
 }

@@ -60,3 +60,78 @@
   height: auto;
   display: block;
 }
+
+/* ===============================
+   TABLET FIX (≤1024px)
+=============================== */
+@media (max-width: 1024px) {
+  .stats-card {
+    padding: 24px;
+  }
+
+  .stats-header {
+    text-align: center;
+  }
+
+  .stats-header h3 {
+    font-size: 20px;
+  }
+
+  .stats-header p {
+    font-size: 13px;
+  }
+
+  .stats-metrics {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+
+  .metric {
+    padding: 14px;
+  }
+}
+
+/* ===============================
+   MOBILE FIX (≤768px)
+=============================== */
+@media (max-width: 768px) {
+  .stats-metrics {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .stats-header h3 {
+    font-size: 18px;
+  }
+
+  .metric strong {
+    font-size: 18px;
+  }
+}
+
+/* ===============================
+   SMALL MOBILE (≤480px)
+=============================== */
+@media (max-width: 480px) {
+  .stats-card {
+    padding: 16px;
+    border-radius: 16px;
+    gap: 20px;
+  }
+
+  .stats-header h3 {
+    font-size: 16px;
+  }
+
+  .stats-header p {
+    font-size: 12px;
+  }
+
+  .metric strong {
+    font-size: 16px;
+  }
+
+  .stats-chart {
+    padding: 12px;
+  }
+}

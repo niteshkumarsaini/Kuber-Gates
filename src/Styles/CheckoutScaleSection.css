@@ -431,7 +431,7 @@
 /* PRO CHECKOUT CARD */
 /* ===================== */
 
-.checkout-card-pro {
+.pd-checkout-card-pro {
   position: relative;
   height: 420px;
   border-radius: 34px;
@@ -441,12 +441,12 @@
     inset 0 0 0 1px rgba(255,255,255,0.2);
   background: #0f1f3d;
   /* border: 2px solid orange; */
-  height: 75vh
+  height: 63vh
 
 }
 
 /* image as texture */
-.card-bg-image {
+.pd-card-bg-image {
   position: absolute;
   inset: 0;
   width: 100%;
@@ -454,10 +454,11 @@
   object-fit: cover;
   opacity: 0.25;
   filter: saturate(0.9);
+  /* border: 2px solid white; */
 }
 
 /* ambient glow */
-.card-ambient {
+.pd-card-ambient {
   position: absolute;
   inset: 0;
   background:
@@ -467,16 +468,19 @@
     radial-gradient(circle at bottom left,
       rgba(242,167,184,0.25),
       transparent 60%);
+      /* border: 2px solid orange; */
+    
 
 }
 
 /* UI layer */
-.card-ui {
+.pd-card-ui {
   position: relative;
   z-index: 2;
   padding: 36px;
   display: grid;
   gap: 18px;
+  /* border: 2px solid red; */
 
 }
 

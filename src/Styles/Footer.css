@@ -107,3 +107,73 @@
 .kg-footer{
   margin-top: 0px;
 }
+
+/* ========= MOBILE OPTIMIZATION ========= */
+
+@media (max-width: 768px) {
+  .kg-footer {
+    padding: 60px 20px 30px;
+  }
+
+  .kg-footer-container {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    text-align: center;
+  }
+
+  /* Brand */
+  .kg-footer-brand img {
+    margin: 0 auto 16px;
+  }
+
+  .kg-footer-brand p {
+    font-size: 13px;
+    max-width: 90%;
+    margin: 0 auto 18px;
+  }
+
+  .kg-footer-socials {
+    display: flex;
+    justify-content: center;
+    gap: 18px;
+  }
+
+  /* Links sections */
+  .kg-footer-links h4 {
+    margin-bottom: 14px;
+  }
+
+  .kg-footer-links a {
+    margin-bottom: 8px;
+    font-size: 13px;
+  }
+
+  /* Bottom bar */
+  .kg-footer-bottom {
+    flex-direction: column;
+    gap: 12px;
+    text-align: center;
+  }
+
+  .kg-footer-bottom div {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .kg-footer-bottom a {
+    margin: 0;
+  }
+}
+
+/* EXTRA SMALL DEVICES */
+@media (max-width: 420px) {
+  .kg-footer-brand p {
+    font-size: 12.5px;
+  }
+
+  .kg-footer-links a {
+    font-size: 12.5px;
+  }
+}

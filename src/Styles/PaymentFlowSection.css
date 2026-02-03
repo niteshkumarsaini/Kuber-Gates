@@ -1,6 +1,7 @@
 .payment-flow {
   background: #fdfaf7; /* Off-white / Ivory */
   padding: 90px 20px;
+  /* border: 2px solid orange; */
 }
 
 .payment-container {
@@ -10,6 +11,7 @@
   grid-template-columns: 1.1fr 0.9fr;
   gap: 60px;
   align-items: center;
+  /* border: 2px solid orange; */
 }
 
 /* LEFT */
@@ -144,5 +146,293 @@
   .payment-actions {
     justify-content: center;
     flex-wrap: wrap;
+  }
+}
+/* ===============================
+   BASE
+   =============================== */
+
+.payment-flow {
+  background: #fdfaf7;
+  padding: 90px 20px;
+  overflow-x: hidden;
+}
+
+.payment-container {
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 60px;
+  align-items: center;
+}
+
+/* LEFT */
+.payment-left h2 {
+  font-size: 2.6rem;
+  color: #0f1c3f;
+  font-weight: 700;
+}
+
+.payment-left h2 span {
+  color: #4b7cf3;
+}
+
+.f-subtitle {
+  color: #606060;
+  font-size: 1rem;
+  max-width: 520px;
+}
+
+.payment-points {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 35px;
+}
+
+.payment-points li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 12px;
+  color: #3f3f3f;
+  font-size: 0.95rem;
+}
+
+.payment-points svg {
+  color: #4b7cf3;
+  font-size: 1rem;
+}
+
+.payment-actions {
+  display: flex;
+  gap: 15px;
+}
+
+.btn-primary {
+  background: #e8a1b0;
+  border: none;
+  padding: 12px 26px;
+  border-radius: 10px;
+  color: white;
+  font-weight: 600;
+}
+
+.btn-outline {
+  background: transparent;
+  border: 1px solid #e8a1b0;
+  padding: 12px 26px;
+  border-radius: 10px;
+  color: #e8a1b0;
+  font-weight: 600;
+}
+
+/* RIGHT MOCK */
+.payment-right {
+  display: flex;
+  justify-content: center;
+}
+
+.payment-mock {
+  width: 100%;
+  max-width: 340px;
+  background: white;
+  border-radius: 22px;
+  padding: 30px;
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.08);
+}
+
+.payment-mock h4 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #0f1c3f;
+}
+
+.step {
+  font-size: 0.85rem;
+  color: #8a8a8a;
+  margin-bottom: 6px;
+}
+
+.step.active {
+  color: #4b7cf3;
+  font-weight: 600;
+}
+
+.input-box,
+.amount {
+  background: #f7f7f7;
+  padding: 12px;
+  border-radius: 8px;
+  margin-bottom: 18px;
+  font-size: 0.95rem;
+}
+
+.mock-btn {
+  width: 100%;
+  background: #4b7cf3;
+  color: white;
+  padding: 12px;
+  border-radius: 10px;
+  border: none;
+  font-weight: 600;
+}
+
+.mock-note {
+  font-size: 0.75rem;
+  color: #9a9a9a;
+  text-align: center;
+  margin-top: 12px;
+}
+
+/* ===============================
+   TABLET & BELOW
+   =============================== */
+
+@media (max-width: 900px) {
+  .payment-container {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .payment-actions {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .payment-points li {
+    justify-content: center;
+  }
+}
+
+
+
+@media (max-width: 440px) {
+  .payment-flow {
+    /* margin-top: 10px; */
+    padding-top: 40px; 
+    padding-left: 12px;
+    padding-right: 12px;
+    /* border: 2px solid red; */
+    height: 110vh;
+    display: flex;
+    justify-content: start;
+    align-items:start;
+    padding: 0px;
+    padding-top: 15px;
+  }
+
+
+
+
+  .payment-container{
+    /* border: 2px solid orange; */
+    margin: 0px;
+  }
+
+
+  .payment-left h2 {
+    font-size: 1.6rem;
+  }
+  .payment-left h2{
+    /* border: 2px solid orange; */
+    margin-bottom: 40px;
+  }
+
+  .f-subtitle {
+    font-size: 0.9rem;
+  }
+
+  .payment-points li {
+    font-size: 0.85rem;
+  }
+
+  .payment-points svg {
+    font-size: 0.85rem; 
+  }
+
+  .btn-primary,
+  .btn-outline {
+    padding: 10px 20px;
+    font-size: 0.85rem;
+  }
+
+  .payment-mock {
+    padding: 22px;
+    border-radius: 16px;
+  }
+
+  .payment-mock h4 {
+    font-size: 0.95rem;
+  }
+
+  .input-box,
+  .amount {
+    font-size: 0.85rem;
+    padding: 10px;
+  }
+
+  .mock-btn {
+    padding: 10px;
+    font-size: 0.85rem;
+  }
+
+  .payment-actions{
+    /* border: 2px solid orange; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  
+  }
+
+  .btn-primary{
+    /* border: 2px solid green; */
+  }
+  .pa-btn{
+    /* border: 2px solid blue; */
+    width: 100px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    height: 55px;
+  }
+
+
+}
+
+/* ===============================
+   ULTRA SMALL
+   =============================== */
+
+@media (max-width: 360px) {
+  .payment-flow {
+    padding-top: 160px;
+  }
+}
+/* ===============================
+   BUTTON WIDTH FIX (SMALL SCREENS)
+   =============================== */
+
+@media (max-width: 440px) {
+  .payment-actions {
+    gap: 10px;
+  }
+
+  .btn-primary,
+  .btn-outline {
+    min-width: 160px;   
+    padding: 10px 18px;
+    font-size: 0.85rem;
+  }
+}
+
+/* Ultra small phones */
+@media (max-width: 360px) {
+  .btn-primary,
+  .btn-outline {
+    min-width: 140px;   
+    padding: 9px 16px;
+    font-size: 0.8rem;
   }
 }

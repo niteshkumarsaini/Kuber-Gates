@@ -96,3 +96,66 @@
 .premium-cta{
   background: rgba(243, 241, 241, 0.848);
 }
+
+/* ===============================
+   MOBILE OPTIMIZATION
+================================ */
+@media (max-width: 480px) {
+
+  /* Section spacing */
+  .premium-cta {
+    padding: 100px 16px 90px;
+  }
+
+  /* Background glows (prevent overflow) */
+  .cta-glow {
+    width: 260px;
+    height: 260px;
+    filter: blur(70px);
+    opacity: 0.28;
+  }
+
+  .cta-glow.blue {
+    top: 10%;
+    left: -140px;
+  }
+
+  .cta-glow.pink {
+    bottom: 5%;
+    right: -150px;
+  }
+
+  /* Content */
+  .cta-content h2 {
+    font-size: 24px;
+    line-height: 1.25;
+  }
+
+  .cta-content p {
+    font-size: 14px;
+    margin-top: 14px;
+    line-height: 1.6;
+  }
+
+  /* CTA button */
+  .cta-btn {
+    margin-top: 28px;
+    padding: 12px 22px;
+    font-size: 13px;
+  }
+}
+
+/* Extra small devices */
+@media (max-width: 360px) {
+  .cta-content h2 {
+    font-size: 22px;
+  }
+
+  .cta-content p {
+    font-size: 13px;
+  }
+
+  .cta-btn {
+    padding: 11px 20px;
+  }
+}

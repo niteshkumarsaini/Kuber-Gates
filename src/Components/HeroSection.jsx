@@ -63,6 +63,9 @@ const HeroSection = () => {
         </motion.div>
 
       </div>
+      <div className="hero-mobile-section">
+        <StatsSection/>
+      </div>
     </section>
   );
 };
