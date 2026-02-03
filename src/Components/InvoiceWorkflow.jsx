@@ -71,7 +71,7 @@ export default function InvoiceWorkflow() {
             <span className="inv-status">Pending</span>
           </div>
 
-          <button className="inv-preview-btn">Pay Invoice</button>
+          <button className="inv-preview-btn" onClick={()=>{alert("We are working on it. It will be functional soon.")}}>Pay Invoice</button>
         </motion.div>
 
       </div>

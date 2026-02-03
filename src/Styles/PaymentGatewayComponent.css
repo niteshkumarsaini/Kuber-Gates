@@ -9,6 +9,12 @@
   max-width: 1300px;
   margin: auto;
 }
+.pg-card{
+  cursor: pointer;
+}
+.pg-trust-item{
+  cursor: pointer;
+}
 
 /* HERO LAYOUT */
 .pg-hero {
@@ -342,5 +348,196 @@
 
   .pg-trust-container {
     grid-template-columns: 1fr;
+  }
+}
+
+/* ===============================
+   RESPONSIVE – PAYMENT GATEWAY
+================================ */
+
+/* ---------- Large Tablets ---------- */
+@media (max-width: 1024px) {
+
+  .pg-section {
+    padding: 100px 6%;
+  }
+
+  .pg-hero {
+    gap: 60px;
+  }
+
+  .pg-left h1 {
+    font-size: 46px;
+  }
+
+  .pg-left p {
+    font-size: 16.5px;
+  }
+}
+
+/* ---------- Tablets ---------- */
+@media (max-width: 900px) {
+
+  .pg-section {
+    padding: 90px 6%;
+  }
+
+  .pg-hero {
+    grid-template-columns: 1fr;
+    gap: 70px;
+  }
+
+  .pg-left {
+    text-align: center;
+  }
+
+  .pg-left p {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .pg-actions {
+    justify-content: center;
+  }
+
+  .pg-left h1 {
+    font-size: 40px;
+    line-height: 1.2;
+  }
+
+  .pg-card {
+    max-width: 520px;
+    margin: 0 auto;
+  }
+
+  .pg-trust-container {
+    grid-template-columns: 1fr;
+    gap: 48px;
+  }
+}
+
+/* ---------- Small Tablets / Phones ---------- */
+@media (max-width: 600px) {
+
+  .pg-section {
+    padding: 80px 5%;
+  }
+
+  .pg-badge {
+    font-size: 11px;
+    padding: 5px 12px;
+  }
+
+  .pg-left h1 {
+    font-size: 32px;
+  }
+
+  .pg-left p {
+    font-size: 15px;
+    line-height: 1.6;
+  }
+
+  .pg-actions {
+    flex-direction: column;
+    gap: 14px;
+  }
+
+  .pg-primary,
+  .pg-secondary {
+    width: 100%;
+    padding: 13px 0;
+    text-align: center;
+  }
+
+  .pg-card {
+    padding: 26px;
+  }
+
+  .pg-item {
+    padding: 14px 16px;
+    gap: 12px;
+  }
+
+  .pg-item p {
+    font-size: 14px;
+  }
+
+  .pg-item small {
+    font-size: 11.5px;
+  }
+}
+
+/* ---------- Small Phones ---------- */
+@media (max-width: 480px) {
+
+  .pg-section {
+    padding: 100px 5%;
+  }
+
+  .pg-left h1 {
+    font-size: 28px;
+  }
+
+  .pg-left p {
+    font-size: 14px;
+  }
+
+  .pg-card {
+    padding: 22px;
+    border-radius: 22px;
+  }
+
+  .pg-item svg {
+    width: 18px;
+    height: 18px;
+  }
+
+  .pg-trust {
+    padding: 70px 6%;
+  }
+
+  .pg-trust-item h4 {
+    font-size: 16px;
+  }
+
+  .pg-trust-item p {
+    font-size: 13.5px;
+  }
+.pg-actions{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.pg-actions .pg-primary, .pg-secondary{
+  /* border: 2px solid orange; */
+  width: 200px;
+}
+
+
+
+
+
+
+}
+
+/* ---------- Ultra Small Devices ---------- */
+@media (max-width: 360px) {
+
+  .pg-left h1 {
+    font-size: 24px;
+  }
+
+  .pg-left p {
+    font-size: 13.5px;
+  }
+
+  .pg-item {
+    padding: 12px 14px;
+  }
+
+  .pg-primary,
+  .pg-secondary {
+    font-size: 14px;
   }
 }

@@ -1,8 +1,14 @@
 import { motion } from "framer-motion";
 import "../Styles/HeroSection.css";
 import StatsSection from "../Components/StatsSection";
+import { useNavigate } from "react-router-dom";
 
 const HeroSection = () => {
+
+  const navigate=useNavigate();
+
+
+
   return (
     <section className="hero">
       <div className="hero-container">
@@ -30,8 +36,8 @@ const HeroSection = () => {
           </p>
 
           <div className="hero-actions">
-            <button className="btn-primary">Get Started</button>
-            <button className="btn-secondary">View Documentation</button>
+            <button className="btn-primary" onClick={()=>{navigate("/get-started")}}>Get Started</button>
+            <button className="btn-secondary" onClick={()=>{navigate("/developers/api-docs")}}>View Documentation</button>
           </div>
 
           <div className="hero-stats">

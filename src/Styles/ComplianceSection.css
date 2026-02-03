@@ -12,6 +12,9 @@
   max-width: 1200px;
   margin: auto;
 }
+.feature-card{
+  cursor: pointer;
+}
 
 /* Left Content */
 .compliance-left .subtitle {

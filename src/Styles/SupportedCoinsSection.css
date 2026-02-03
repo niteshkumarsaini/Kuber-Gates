@@ -12,6 +12,9 @@
   text-align: center;
   /* border: 2px solid blue; */
 }
+.coin-card{
+  cursor: pointer;
+}
 
 /* TITLE */
 .supported-container h2 {

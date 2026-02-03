@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import "../Styles/GatewayFeatures.css";
+import { useNavigate } from "react-router-dom";
 
 const fadeUp = {
   hidden: { opacity: 0, y: 40 },
@@ -7,6 +8,7 @@ const fadeUp = {
 };
 
 export default function GatewayFeatures() {
+  const navigate=useNavigate();
   return (
     <div>
     <section className="gateway-section" id="gt-1">
@@ -30,7 +32,7 @@ export default function GatewayFeatures() {
               accounting and reconciliation workflows.
             </p>
 
-            <button className="gateway-btn">
+            <button className="gateway-btn" onClick={()=>{navigate("/products/crypto-payments")}}>
               Explore <span>→</span>
             </button>
           </div>
@@ -69,7 +71,7 @@ export default function GatewayFeatures() {
               settlement worldwide.
             </p>
 
-            <button className="gateway-btn">
+            <button className="gateway-btn" onClick={()=>{navigate("/products/crypto-payments")}}>
               Explore <span>→</span>
             </button>
           </div>
@@ -171,7 +173,7 @@ export default function GatewayFeatures() {
       accounts in real time.
     </p>
 
-    <button className="gateway-btn">
+    <button className="gateway-btn" onClick={()=>{navigate("/products/crypto-payments")}}>
       Explore <span>→</span>
     </button>
   </div>

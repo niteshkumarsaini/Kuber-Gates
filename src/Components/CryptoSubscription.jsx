@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "../Styles/CryptoSubscription.css";
+import { useNavigate } from "react-router-dom";
 
 const plans = [
   {
@@ -42,6 +43,7 @@ const plans = [
 
 export default function CryptoSubscription() {
   const [billing, setBilling] = useState("monthly");
+  const navigate=useNavigate();
 
   return (
     <section className="premium-subscription">
@@ -96,7 +98,7 @@ export default function CryptoSubscription() {
               ))}
             </ul>
 
-            <button className="cta-btn">Subscribe</button>
+            <button className="cta-btn" onClick={()=>{navigate("/contact-us")}}>Subscribe</button>
           </div>
         ))}
       </div>

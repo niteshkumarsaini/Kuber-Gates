@@ -1,84 +1,137 @@
 import React, { useState } from "react";
 import styles from "../Styles/GetStarted.module.css";
 import logo from "../assets/logo.png";
+import Swal from "sweetalert2";
 
-const GetStarted = () => {
-  const [isLogin, setIsLogin] = useState(true);
+export default function GetStarted() {
+  const [isLogin, setIsLogin] = useState(false);
 
-  const toggleForm = () => setIsLogin(!isLogin);
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    const form = new FormData(e.target);
+
+    const requiredFields = isLogin
+      ? ["email", "password"]
+      : ["name", "company", "phone", "email", "password"];
+
+    const isMissing = requiredFields.some(
+      (field) => !form.get(field)?.trim()
+    );
+
+    // ❌ ERROR ALERT (Professional)
+    if (isMissing) {
+      Swal.fire({
+        title: "Incomplete Form",
+        text: "Please fill all required fields.",
+        iconHtml: `
+          <svg width="44" height="44" viewBox="0 0 24 24" fill="none"
+            stroke="#c0392b" stroke-width="2.2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="10" />
+            <line x1="12" y1="8" x2="12" y2="12" />
+            <line x1="12" y1="16" x2="12.01" y2="16" />
+          </svg>
+        `,
+        customClass: {
+          icon: "kg-swal-icon"
+        },
+        confirmButtonColor: "#d16b86"
+      });
+      return;
+    }
+
+    // ✅ SUCCESS ALERT (Professional)
+    Swal.fire({
+      title: isLogin ? "Login Successful" : "Account Created",
+      text: isLogin
+        ? "Welcome back to KuberGates"
+        : "Your account has been registered successfully.",
+      iconHtml: `
+        <svg width="44" height="44" viewBox="0 0 24 24" fill="none"
+          stroke="#d16b86" stroke-width="2.4"
+          stroke-linecap="round" stroke-linejoin="round">
+          <path d="M20 6L9 17l-5-5" />
+        </svg>
+      `,
+      customClass: {
+        icon: "kg-swal-icon"
+      },
+      confirmButtonColor: "#d16b86",
+      confirmButtonText: "Continue",
+      timer: 2200,
+      showConfirmButton: false
+    });
+
+    e.target.reset();
+  };
 
   return (
-    <div className={styles.container}>
-      {/* LEFT FEATURES SECTION */}
-      <div className={styles.featuresSection}>
-        <div className={styles.featuresInner}>
-          <h2 className={styles.featuresTitle}>Why Choose Us?</h2>
+    <section className={styles.wrapper}>
+      <div className={styles.layout}>
+        {/* LEFT */}
+        <div className={styles.left}>
+          <h2>Why Choose KuberGates?</h2>
 
-          <div className={styles.featureGrid}>
-            <div className={styles.featureCard}>
-              <h3>Secure Payments</h3>
-              <p>Bank-grade encryption to protect every transaction.</p>
+          <div className={styles.cards}>
+            <div className={styles.card}>
+              <h4>Secure Payments</h4>
+              <p>Enterprise-grade security for every transaction.</p>
             </div>
 
-            <div className={styles.featureCard}>
-              <h3>Real-time Dashboard</h3>
-              <p>Track revenue, refunds, and settlements instantly.</p>
+            <div className={styles.card}>
+              <h4>Real-time Dashboard</h4>
+              <p>Instant visibility into revenue & settlements.</p>
             </div>
 
-            <div className={styles.featureCard}>
-              <h3>Easy Integration</h3>
-              <p>Developer-friendly APIs & quick onboarding.</p>
+            <div className={styles.card}>
+              <h4>Easy Integration</h4>
+              <p>Developer-friendly APIs & SDKs.</p>
             </div>
 
-            <div className={styles.featureCard}>
-              <h3>24/7 Support</h3>
-              <p>Our experts are always ready to help you.</p>
+            <div className={styles.card}>
+              <h4>24/7 Support</h4>
+              <p>Dedicated experts whenever you need help.</p>
             </div>
           </div>
         </div>
-      </div>
 
-      {/* RIGHT FORM SECTION */}
-      <div className={styles.formSection}>
-        <div className={styles.card}>
-          <img src={logo} alt="Company Logo" className={styles.formLogo} />
+        {/* RIGHT */}
+        <div className={styles.right}>
+          <div className={styles.formCard}>
+            <img src={logo} alt="KuberGates" />
 
-          <h1 className={styles.title}>
-            {isLogin ? "Welcome Back" : "Create Your Account"}
-          </h1>
+            <h1>{isLogin ? "Welcome Back" : "Create Your Account"}</h1>
 
-          <form className={styles.form}>
-            {!isLogin && (
+            <form onSubmit={handleSubmit}>
+              {!isLogin && (
+                <>
+                  <input name="name" placeholder="Full Name" />
+                  <input name="company" placeholder="Company Name" />
+                  <input name="phone" placeholder="Phone Number" />
+                </>
+              )}
+
+              <input name="email" type="email" placeholder="Email Address" />
               <input
-                type="text"
-                placeholder="Full Name"
-                className={styles.input}
+                name="password"
+                type="password"
+                placeholder="Password"
               />
-            )}
 
-            <input type="email" placeholder="Email" className={styles.input} />
+              <button type="submit">
+                {isLogin ? "Login" : "Register"}
+              </button>
+            </form>
 
-            <input
-              type="password"
-              placeholder="Password"
-              className={styles.input}
-            />
-
-            <button type="submit" className={styles.submitBtn}>
-              {isLogin ? "Login" : "Sign Up"}
-            </button>
-          </form>
-
-          <p className={styles.toggleText}>
-            {isLogin ? "New here?" : "Already have an account?"}
-            <span onClick={toggleForm} className={styles.toggleLink}>
-              {isLogin ? " Sign Up" : " Login"}
-            </span>
-          </p>
+            <p>
+              {isLogin ? "New here?" : "Already have an account?"}
+              <span onClick={() => setIsLogin(!isLogin)}>
+                {isLogin ? " Sign Up" : " Login"}
+              </span>
+            </p>
+          </div>
         </div>
       </div>
-    </div>
+    </section>
   );
-};
-
-export default GetStarted;
+}

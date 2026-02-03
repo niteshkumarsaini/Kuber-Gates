@@ -247,3 +247,124 @@ font-size: 25px;
   /* border: 2px solid slateblue; */
   font-size: 14px;
 }
+/* ================= RESPONSIVE – TABLET ================= */
+
+@media (max-width: 1024px) {
+  .pricing-container {
+    padding: 4.5rem 1.2rem 5rem;
+  }
+
+  .pricing-header h1 {
+    font-size: 2.6rem;
+  }
+
+  .comparison-section h2 {
+    font-size: 2rem;
+  }
+
+  .plans-wrapper {
+    gap: 2.5rem;
+  }
+}
+
+/* ================= RESPONSIVE – MOBILE ================= */
+
+@media (max-width: 768px) {
+  .pricing-header {
+    margin-top: 30px;
+    margin-bottom: 45px;
+  }
+
+  .pricing-header h1 {
+    font-size: 2.1rem;
+    line-height: 1.2;
+  }
+
+  .pricing-header p {
+    font-size: 0.95rem;
+  }
+
+  .plans-wrapper {
+    gap: 2rem;
+  }
+
+  .plan-card {
+    width: 100%;
+    max-width: 420px;
+    padding: 2.6rem 2rem;
+  }
+
+  .plan-title {
+    font-size: 1.4rem;
+  }
+
+  .plan-price {
+    font-size: 2rem;
+  }
+
+  .plan-desc {
+    font-size: 0.9rem;
+  }
+
+  .plan-features li {
+    font-size: 0.9rem;
+  }
+
+  .btn-plan {
+    font-size: 0.95rem;
+    padding: 0.95rem;
+  }
+
+  .comparison-section h2 {
+    font-size: 1.9rem;
+  }
+
+  .compare-table th,
+  .compare-table td {
+    padding: 0.9rem 1rem;
+    font-size: 0.85rem;
+  }
+}
+
+/* ================= RESPONSIVE – SMALL MOBILE ================= */
+
+@media (max-width: 480px) {
+  .pricing-container {
+    padding: 4rem 1rem;
+  }
+
+  .pricing-header h1 {
+    font-size: 1.85rem;
+  }
+
+  .pricing-header p {
+    font-size: 0.88rem;
+  }
+
+  .badge {
+    font-size: 0.65rem;
+    padding: 0.4rem 1.1rem;
+  }
+
+  .plan-card {
+    padding: 2.2rem 1.6rem;
+    border-radius: 22px;
+  }
+
+  .plan-price {
+    font-size: 1.8rem;
+  }
+
+  .comparison-section h2 {
+    font-size: 1.6rem;
+  }
+
+  /* Table horizontal scroll clean */
+  .table-wrapper {
+    overflow-x: auto;
+  }
+
+  .compare-table {
+    min-width: 520px;
+  }
+}

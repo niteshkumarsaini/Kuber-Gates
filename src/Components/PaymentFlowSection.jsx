@@ -1,8 +1,10 @@
 import React from "react";
 import "../Styles/PaymentFlowSection.css";
 import { FaCheckCircle } from "react-icons/fa";
+import { useNavigate } from "react-router-dom";
 
 const PaymentFlowSection = () => {
+  const navigate=useNavigate();
   return (
     <section className="payment-flow">
       <div className="payment-container">
@@ -27,8 +29,8 @@ const PaymentFlowSection = () => {
           </ul>
 
           <div className="payment-actions">
-            <button className="btn-primary pa-btn">Get Started</button>
-            <button className="btn-outline pa-btn">View Documentation</button>
+            <button className="btn-primary pa-btn" onClick={()=>{navigate("/get-started")}}>Get Started</button>
+            <button className="btn-outline pa-btn" onClick={()=>{navigate("/developers/api-docs")}} >View Documentation</button>
           </div>
         </div>
 
@@ -43,7 +45,7 @@ const PaymentFlowSection = () => {
             <div className="step">2. Enter Amount</div>
             <div className="amount">100.00 USDT</div>
 
-            <button className="mock-btn">Proceed to Pay</button>
+            <button className="mock-btn" onClick={()=>{alert("Processing...")}}>Proceed to Pay</button>
 
             <p className="mock-note">
               * Demo environment – no real funds involved

@@ -27,6 +27,7 @@ import { useEffect } from 'react'
 import { useLocation } from 'react-router-dom'
 import MultiCurrency from './Screens/MultiCurrency'
 import RefundPartialRefund from './Screens/RefundPartialRefund' 
+import ContactUs from './Screens/ContactUs'
 const ScrollToTop = () => {
   const { pathname } = useLocation()
 
@@ -63,6 +64,7 @@ function App() {
           <Route path='/login' element={<Login />} />
           <Route path='/products/multi-currency' element={<MultiCurrency />} />
           <Route path='/products/refunds' element={<RefundPartialRefund />} />
+           <Route path='/contact-us' element={<ContactUs />} />
         </Routes>
 
 

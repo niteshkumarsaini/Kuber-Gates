@@ -2,8 +2,10 @@ import React from "react";
 import { ArrowRight, Shield } from "lucide-react";
 import "../Styles/AcceptPaymentsHero.css";
 import kuberLogo from "../assets/logo.png";
+import { useNavigate } from "react-router-dom";
 
 export default function AcceptPaymentsHero() {
+  const navigate=useNavigate();
   return (
     <section className="hero">
       <div className="hero-container">
@@ -23,10 +25,10 @@ export default function AcceptPaymentsHero() {
           </p>
 
           <div className="hero-actions">
-            <button className="btn-primary">
+            <button className="btn-primary" onClick={()=>{navigate("/get-started")}}>
               Create business account <ArrowRight size={18} />
             </button>
-            <button className="btn-secondary">View live demo</button>
+            <button className="btn-secondary" onClick={()=>{alert("We are working on it. It will be functional soon.")}}>View live demo</button>
           </div>
 
           <div className="hero-meta">
@@ -58,7 +60,7 @@ export default function AcceptPaymentsHero() {
               <code>bc1q…9xk2</code>
             </div>
 
-            <button className="checkout-pay">
+            <button className="checkout-pay"  onClick={()=>{alert("We are working on it. It will be functional soon.")}}>
               Confirm payment
             </button>
 

@@ -15,6 +15,13 @@
   margin: 0 auto 90px;
 }
 
+.cp-card-item{
+  cursor: pointer;
+}
+.cp-stat{
+  cursor: pointer;
+}
+
 .cp-badge {
   display: inline-block;
   padding: 6px 14px;
@@ -145,5 +152,131 @@
 
   .cp-stats {
     grid-template-columns: 1fr;
+  }
+}
+/* ================== TABLET ================== */
+@media (max-width: 1024px) {
+  .cp-header h2 {
+    font-size: 36px;
+  }
+
+  .cp-grid {
+    gap: 50px;
+  }
+
+  .cp-left h3 {
+    font-size: 24px;
+  }
+
+  .cp-card {
+    padding: 30px;
+  }
+
+  .cp-stats {
+    gap: 30px;
+  }
+}
+
+/* ================== MOBILE ================== */
+@media (max-width: 900px) {
+  .cp-section {
+    padding: 90px 5%;
+  }
+
+  .cp-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .cp-header {
+    margin-bottom: 70px;
+  }
+
+  .cp-header h2 {
+    font-size: 30px;
+  }
+
+  .cp-header p {
+    font-size: 16px;
+  }
+
+  .cp-left h3 {
+    font-size: 22px;
+  }
+
+  .cp-left p {
+    font-size: 15px;
+  }
+
+  .cp-card {
+    padding: 28px;
+  }
+
+  .cp-card-item {
+    gap: 14px;
+  }
+
+  .cp-card-item svg {
+    font-size: 22px;
+  }
+
+  .cp-stats {
+    grid-template-columns: 1fr;
+    margin-top: 80px;
+  }
+
+  .cp-stat h4 {
+    font-size: 26px;
+  }
+}
+
+/* ================== SMALL MOBILE ================== */
+@media (max-width: 600px) {
+  .cp-section {
+    padding: 70px 5%;
+    padding-top: 120px;
+  }
+
+  .cp-header h2 {
+    font-size: 24px;
+  }
+
+  .cp-header p {
+    font-size: 15px;
+  }
+
+  .cp-left h3 {
+    font-size: 20px;
+  }
+
+  .cp-point {
+    align-items: flex-start;
+  }
+
+  .cp-point span {
+    font-size: 14px;
+  }
+
+  .cp-card {
+    padding: 24px;
+  }
+
+  .cp-card-item {
+    padding: 14px 0;
+  }
+
+  .cp-card-item h4 {
+    font-size: 15px;
+  }
+
+  .cp-card-item p {
+    font-size: 13px;
+  }
+
+  .cp-stat h4 {
+    font-size: 24px;
+  }
+
+  .cp-stat span {
+    font-size: 13px;
   }
 }

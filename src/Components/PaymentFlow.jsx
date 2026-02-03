@@ -1,3 +1,4 @@
+import { useNavigate } from "react-router-dom";
 import "../Styles/PaymentFlow.css";
 import { motion } from "framer-motion";
 
@@ -25,6 +26,7 @@ const steps = [
 ];
 
 export default function PaymentFlow() {
+  const navigate=useNavigate();
   return (
     <section className="flow-section">
       <div className="flow-glow" />
@@ -45,7 +47,7 @@ export default function PaymentFlow() {
             settlements, reduce volatility, and scale your business globally.
           </p>
 
-          <button className="flow-cta">
+          <button className="flow-cta" onClick={()=>{navigate("/developers/api-docs")}}>
             Explore integrations →
           </button>
         </motion.div>

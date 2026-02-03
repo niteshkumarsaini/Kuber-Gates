@@ -12,6 +12,12 @@
   font-weight: 700;
 }
 
+.t-feature-card{
+  cursor: pointer;
+}
+
+
+
 .t-section-title span {
   color: #4b7cf3;
 }

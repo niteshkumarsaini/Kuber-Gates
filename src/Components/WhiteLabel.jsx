@@ -8,8 +8,10 @@ import {
   FaCode,
 } from "react-icons/fa";
 import "../Styles/WhiteLabel.css";
+import { useNavigate } from "react-router-dom";
 
 export default function WhiteLabel() {
+  const navigate=useNavigate();
   return (
     <div className="wl-container">
 
@@ -32,8 +34,8 @@ export default function WhiteLabel() {
           </motion.p>
 
           <div className="wl-cta">
-            <button className="btn-primary">Get Started</button>
-            <button className="btn-outline">Contact Sales</button>
+            <button className="btn-primary" onClick={()=>{navigate("/get-started")}}>Get Started</button>
+            <button className="btn-outline" onClick={()=>{navigate("/contact-us")}}>Contact Sales</button>
           </div>
 
           <div className="wl-stats">
@@ -114,8 +116,8 @@ export default function WhiteLabel() {
           <h2>Launch Your White-Label Gateway Today</h2>
 
           <div className="wl-cta">
-            <button className="btn-primary">Start Free</button>
-            <button className="btn-outline">Book a Demo</button>
+            <button className="btn-primary" onClick={()=>{navigate("/contact-us")}}>Start Free</button>
+            <button className="btn-outline" onClick={()=>{navigate("/contact-us")}}>Book a Demo</button>
           </div>
         </div>
       </section>

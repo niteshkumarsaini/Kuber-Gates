@@ -8,8 +8,10 @@ import {
   TrendingUp
 } from "lucide-react";
 import "../Styles/PaymentGatewayComponent.css";
+import { useNavigate } from "react-router-dom";
 
 export default function PaymentGatewayComponent() {
+  const navigate=useNavigate();
   return (
     <>
       {/* HERO SECTION */}
@@ -39,8 +41,8 @@ export default function PaymentGatewayComponent() {
               </p>
 
               <div className="pg-actions">
-                <button className="pg-primary">Get Started</button>
-                <button className="pg-secondary">View Docs</button>
+                <button className="pg-primary" onClick={()=>{navigate("/get-started")}}>Get Started</button>
+                <button className="pg-secondary" onClick={()=>{navigate("/developers/api-docs")}}>View Docs</button>
               </div>
             </motion.div>
 

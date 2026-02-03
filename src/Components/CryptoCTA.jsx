@@ -1,7 +1,9 @@
 import { motion } from "framer-motion";
 import "../Styles/CryptoCTA.css";
+import { useNavigate } from "react-router-dom";
 
 export default function CryptoCTA() {
+  const navigate=useNavigate();
   return  (
      <section className="premium-cta">
       {/* animated background glow */}
@@ -34,7 +36,7 @@ export default function CryptoCTA() {
         <motion.button
           className="cta-btn"
           whileHover={{ scale: 1.05 }}
-          whileTap={{ scale: 0.97 }}
+          whileTap={{ scale: 0.97 }} onClick={()=>{navigate("/get-started")}}
         >
           Get Started
         </motion.button>

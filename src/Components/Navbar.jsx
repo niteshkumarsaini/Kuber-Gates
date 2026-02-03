@@ -122,6 +122,7 @@ export default function Navbar() {
 
           <li onClick={() => goTo("/company")}>Company</li>
           <li onClick={() => goTo("/pricing")}>Pricing</li>
+            <li onClick={() => goTo("/contact-us")}>Contact us</li>
         </ul>
 
         {/* DESKTOP CTA */}
@@ -171,6 +172,7 @@ export default function Navbar() {
             {/* STATIC */}
             <div onClick={() => goTo("/company")}>Company</div>
             <div onClick={() => goTo("/pricing")}>Pricing</div>
+             <div onClick={() => goTo("/contact-us")}>Contact us</div>
             <div onClick={() => goTo("/login")}>Login</div>
 
             <div className="mobile-cta" onClick={() => goTo("/get-started")}>

@@ -8,8 +8,10 @@ import {
   FaFileInvoiceDollar
 } from "react-icons/fa";
 import "../Styles/RefundsComponent.css";
+import { useNavigate } from "react-router-dom";
 
 export default function RefundsComponent() {
+  const navigate=useNavigate();
   return (
     <section className="refund-section">
       <div className="refund-container">
@@ -124,7 +126,7 @@ export default function RefundsComponent() {
               <li>✔ Refund webhooks & reports</li>
             </ul>
 
-            <button className="refund-btn">
+            <button className="refund-btn" onClick={()=>{navigate("/contact-us")}}>
               Learn more
             </button>
           </motion.div>

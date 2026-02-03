@@ -1,0 +1,193 @@
+.kg-contact-section {
+  padding: 120px 20px;
+  padding-top: 150px;
+  padding-bottom: 50px;
+  background: #f9fafb;
+}
+
+.kg-contact-card {
+  max-width: 1100px;
+  margin: auto;
+  background: #ffffff;
+  border-radius: 16px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.06);
+  overflow: hidden;
+}
+
+.kg-contact-left {
+  padding: 40px;
+}
+
+.kg-contact-left h2 {
+  font-size: 28px;
+  margin-bottom: 12px;
+}
+
+.kg-desc {
+  color: #6b7280;
+  margin-bottom: 24px;
+}
+
+.kg-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.kg-info.kg-link {
+  margin-top: 14px;
+  color: #374151;
+  text-decoration: none;
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.kg-info.kg-link:hover {
+  color: #3b82f6;
+  transform: translateX(2px);
+}
+
+.kg-contact-right {
+  padding: 40px;
+  background: #f8fafc;
+}
+
+.kg-field {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  padding: 12px 14px;
+  border-radius: 10px;
+  margin-bottom: 16px;
+}
+
+.kg-field input,
+.kg-field textarea {
+  border: none;
+  outline: none;
+  width: 100%;
+  font-size: 14px;
+}
+
+.kg-textarea textarea {
+  resize: none;
+  min-height: 100px;
+}
+
+.kg-submit {
+  width: 100%;
+  padding: 14px;
+  background: #3b82f6;
+  color: #ffffff;
+  border: none;
+  border-radius: 10px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.kg-submit:hover {
+  background: #2563eb;
+  transform: translateY(-1px);
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .kg-contact-card {
+    grid-template-columns: 1fr;
+  }
+}
+/* ================= TABLET ================= */
+@media (max-width: 1024px) {
+  .kg-contact-section {
+    padding-top: 130px;
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
+  .kg-contact-left h2 {
+    font-size: 26px;
+  }
+
+  .kg-desc {
+    font-size: 14px;
+  }
+}
+
+/* ================= MOBILE ================= */
+@media (max-width: 768px) {
+  .kg-contact-section {
+    padding-top: 110px;
+    padding-bottom: 40px;
+  }
+
+  .kg-contact-card {
+    grid-template-columns: 1fr;
+    border-radius: 14px;
+  }
+
+  .kg-contact-left,
+  .kg-contact-right {
+    padding: 28px;
+  }
+
+  .kg-contact-left h2 {
+    font-size: 24px;
+  }
+
+  .kg-desc {
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+
+  .kg-info {
+    font-size: 14px;
+  }
+
+  .kg-field {
+    padding: 11px 12px;
+  }
+
+  .kg-field input,
+  .kg-field textarea {
+    font-size: 14px;
+  }
+
+  .kg-submit {
+    font-size: 14px;
+    padding: 13px;
+  }
+}
+
+/* ================= SMALL MOBILE ================= */
+@media (max-width: 480px) {
+  .kg-contact-section {
+    padding-top: 100px;
+  }
+
+  .kg-contact-left h2 {
+    font-size: 22px;
+  }
+
+  .kg-desc {
+    font-size: 13px;
+  }
+
+  .kg-info {
+    gap: 8px;
+    font-size: 13px;
+  }
+
+  .kg-field svg {
+    width: 16px;
+    height: 16px;
+  }
+
+  .kg-submit {
+    font-size: 13px;
+    border-radius: 8px;
+  }
+}

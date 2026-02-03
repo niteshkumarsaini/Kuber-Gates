@@ -185,3 +185,160 @@
     grid-template-columns: 1fr;
   }
 }
+/* ========================= */
+/* API COMPONENT – RESPONSIVE */
+/* ========================= */
+
+/* ---------- TABLET (<= 1024px) ---------- */
+@media (max-width: 1024px) {
+  .api-section {
+    padding: 100px 5%;
+  }
+
+  .api-header h2 {
+    font-size: 36px;
+  }
+
+  .api-header p {
+    font-size: 16px;
+  }
+
+  .api-grid {
+    gap: 60px;
+  }
+
+  .api-card {
+    padding: 38px;
+  }
+}
+
+/* ---------- MOBILE (<= 768px) ---------- */
+@media (max-width: 768px) {
+  .api-section {
+    padding: 80px 5%;
+  }
+
+  /* Header */
+  .api-header {
+    margin-bottom: 60px;
+  }
+
+  .api-header h2 {
+    font-size: 30px;
+    line-height: 1.3;
+  }
+
+  .api-header p {
+    font-size: 15px;
+  }
+
+  /* Grid stack */
+  .api-grid {
+    grid-template-columns: 1fr;
+    gap: 50px;
+  }
+
+  /* Left */
+  .api-left h3 {
+    font-size: 24px;
+    margin-bottom: 22px;
+  }
+
+  .api-point {
+    gap: 14px;
+  }
+
+  .api-point svg {
+    font-size: 22px;
+  }
+
+  .api-point h4 {
+    font-size: 15.5px;
+  }
+
+  .api-point p {
+    font-size: 14px;
+  }
+
+  /* Card */
+  .api-card {
+    padding: 32px;
+  }
+
+  .api-card-icon {
+    width: 60px;
+    height: 60px;
+    font-size: 24px;
+  }
+
+  .api-card h4 {
+    font-size: 18px;
+  }
+
+  .api-card p {
+    font-size: 14.5px;
+  }
+
+  .api-code {
+    font-size: 12.5px;
+  }
+}
+
+/* ---------- SMALL MOBILE (<= 480px) ---------- */
+@media (max-width: 480px) {
+  .api-section {
+    padding: 70px 4%;
+    padding-top: 120px;
+  }
+
+  .api-header h2 {
+    font-size: 26px;
+  }
+
+  .api-header p {
+    font-size: 14px;
+  }
+
+  /* Points tighter */
+  .api-point {
+    gap: 12px;
+  }
+
+  .api-point svg {
+    font-size: 20px;
+  }
+
+  .api-point h4 {
+    font-size: 15px;
+  }
+
+  .api-point p {
+    font-size: 13.5px;
+  }
+
+  /* Card tighter */
+  .api-card {
+    padding: 26px;
+    border-radius: 22px;
+  }
+
+  .api-card-top {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .api-status {
+    font-size: 10px;
+  }
+
+  .api-code {
+    font-size: 12px;
+    padding: 14px;
+  }
+
+  .api-btn {
+    width: 100%;
+    padding: 13px;
+    font-size: 14px;
+  }
+}

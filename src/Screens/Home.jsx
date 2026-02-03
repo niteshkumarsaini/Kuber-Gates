@@ -25,8 +25,6 @@ const Home = () => {
     <div>
       <Navbar/>
       <HeroSection/>
-      
-    
       <FeaturesSection/>
     <PaymentFlowSection/>
     <SupportedCoinsSection/>

@@ -1,6 +1,9 @@
+import { useNavigate } from "react-router-dom";
 import "../Styles/Pricing.css";
 
 export default function Pricing() {
+  const navigate=useNavigate();
+  
   return (
     <section className="pricing-container">
 
@@ -34,7 +37,7 @@ export default function Pricing() {
             <li>✓ Email & chat support</li>
           </ul>
 
-          <button className="btn-plan">Start Accepting Payments</button>
+          <button className="btn-plan" onClick={()=>{navigate("/get-started")}}>Start Accepting Payments</button>
         </div>
 
         {/* ENTERPRISE */}
@@ -53,7 +56,7 @@ export default function Pricing() {
             <li>✓ 24/7 premium support</li>
           </ul>
 
-          <button className="btn-plan secondary">
+          <button className="btn-plan secondary" onClick={()=>{navigate("/contact-us")}}>
             Talk to Sales
           </button>
         </div>
