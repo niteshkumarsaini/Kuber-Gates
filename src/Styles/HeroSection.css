@@ -16,7 +16,7 @@
 /* =====================
    HERO ROOT (FIXED)
 ===================== */
-.hero {
+.m-hero {
   background: var(--bg-ivory);
   width: 100%;
   display: block;
@@ -213,24 +213,18 @@
     display: none;
   }
 
-  .hero{
+  .m-hero{
     /* border: 2px solid green; */
     padding-bottom: 0px;
     margin-bottom: 0px;
-    height: 205vh;
+    /* height: 250vh; */
   }
 .hero-mobile-section{
   display: flex;
   /* border: 2px solid red; */
   margin:20px 2px;
 }
-.hero{
-  /* border: 2px solid orange; */
-  height: 170vh;
-}
-.hero-actions{
-  /* border: 2px solid orange; */
-}
+
 
 .hero-actions .btn-primary{
   /* border: 2px solid navy; */
@@ -259,13 +253,22 @@
     width: 84vw;
   }
   .hero-right{
-    border: 2px solid blue;
+    /* border: 2px solid blue; */
     display: none;
   }
 .mycard{
   margin-top: 10px;
   display: flex;
   font-size: 10px;
-  border: 2px solid brown;
+  /* border: 2px solid brown; */
 }
+}
+@media (max-width: 480px) {
+    .m-hero {
+        /* padding-top: 88px; */
+        padding-left: 5%;
+        padding-right: 5%;
+        /* border: 2px solid olive; */
+
+    }
 }

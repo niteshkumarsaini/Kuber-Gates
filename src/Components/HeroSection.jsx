@@ -10,7 +10,7 @@ const HeroSection = () => {
 
 
   return (
-    <section className="hero">
+    <section className="m-hero">
       <div className="hero-container">
 
         {/* LEFT CONTENT */}
