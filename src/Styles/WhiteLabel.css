@@ -191,3 +191,162 @@
     flex-direction: column;
   }
 }
+/* ========================= */
+/* LAPTOP / TABLET (<= 1024px) */
+/* ========================= */
+@media (max-width: 1024px) {
+  .wl-hero {
+    padding: 6rem 0 5rem;
+  }
+
+  .wl-hero h1 {
+    font-size: 2.6rem;
+  }
+
+  .wl-hero p {
+    font-size: 1.05rem;
+  }
+
+  .wl-features h2,
+  .wl-final h2 {
+    font-size: 2.1rem;
+  }
+
+  .why-grid {
+    gap: 1.6rem 2rem;
+  }
+}
+
+/* ========================= */
+/* TABLET (<= 900px) */
+/* ========================= */
+@media (max-width: 900px) {
+  .wl-hero h1 {
+    font-size: 2.3rem;
+    line-height: 1.25;
+  }
+
+  .wl-hero p {
+    font-size: 1rem;
+  }
+
+  .wl-stats {
+    gap: 1.4rem;
+  }
+
+  .feature-card {
+    padding: 2rem;
+    border-radius: 32px;
+  }
+
+  .why-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* ========================= */
+/* MOBILE (<= 768px) */
+/* ========================= */
+@media (max-width: 768px) {
+  .wl-hero {
+    padding: 5rem 0 4.5rem;
+  }
+
+  .wl-hero h1 {
+    font-size: 2rem;
+  }
+
+  .wl-hero p {
+    font-size: 0.95rem;
+    margin-bottom: 2.2rem;
+  }
+
+  /* CTA buttons stack */
+  .wl-cta {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .btn-primary,
+  .btn-outline {
+    width: 100%;
+    max-width: 320px;
+    text-align: center;
+  }
+
+  .wl-features {
+    padding: 4.5rem 0;
+  }
+
+  .wl-features h2 {
+    font-size: 1.9rem;
+    margin-bottom: 2.6rem;
+  }
+
+  .feature-grid {
+    gap: 1.6rem;
+  }
+
+  .why-grid {
+    gap: 1.4rem;
+  }
+
+  .wl-final {
+    padding: 4.5rem 0 5.5rem;
+  }
+
+  .wl-final h2 {
+    font-size: 2rem;
+  }
+}
+
+/* ========================= */
+/* SMALL MOBILE (<= 480px) */
+/* ========================= */
+@media (max-width: 480px) {
+  .wl-hero {
+    padding: 4.5rem 0 4rem;
+    padding-top: 125px;
+  }
+
+  .wl-hero h1 {
+    font-size: 1.7rem;
+  }
+
+  .wl-hero p {
+    font-size: 0.9rem;
+  }
+
+  .stat-box {
+    padding: 1.3rem;
+  }
+  .wl-cta .btn-primary, .btn-outline{
+    /* border: 2px solid orange; */
+    width: 200px;
+  }
+
+  .stat-box strong {
+    font-size: 1.6rem;
+  }
+
+  .feature-card {
+    padding: 1.6rem;
+    border-radius: 26px;
+  }
+
+  .feature-card h3 {
+    font-size: 1rem;
+  }
+
+  .why-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .why-grid li {
+    font-size: 14.5px;
+  }
+
+  .wl-final h2 {
+    font-size: 1.8rem;
+  }
+}

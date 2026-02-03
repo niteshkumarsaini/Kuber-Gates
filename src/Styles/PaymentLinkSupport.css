@@ -125,3 +125,138 @@
        */
        
 }
+/* ========================= */
+/* TABLET & SMALL LAPTOP */
+/* ========================= */
+@media (max-width: 1024px) {
+  .pls-section {
+    padding: 90px 5%;
+  }
+
+  .pls-header h2 {
+    font-size: 36px;
+  }
+
+  .pls-header p {
+    font-size: 16px;
+  }
+
+  .pls-grid {
+    gap: 50px;
+  }
+
+  .pls-step h4 {
+    font-size: 17px;
+  }
+
+  .pls-step p {
+    font-size: 14.5px;
+  }
+
+  .pls-card {
+    padding: 30px;
+  }
+}
+
+/* ========================= */
+/* MOBILE (TABLET PORTRAIT + PHONES) */
+/* ========================= */
+@media (max-width: 768px) {
+  .pls-section {
+    padding: 70px 5%;
+  }
+
+  .pls-header {
+    margin-bottom: 50px;
+  }
+
+  .pls-header h2 {
+    font-size: 32px;
+    line-height: 1.25;
+  }
+
+  .pls-header p {
+    font-size: 15.5px;
+  }
+
+  .pls-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .pls-step {
+    gap: 14px;
+    margin-bottom: 26px;
+  }
+
+  .pls-step svg {
+    font-size: 24px;
+  }
+
+  .pls-step h4 {
+    font-size: 16px;
+  }
+
+  .pls-step p {
+    font-size: 14px;
+  }
+
+  .pls-card {
+    padding: 26px;
+  }
+
+  .pls-card-item h5 {
+    font-size: 15px;
+  }
+
+  .pls-card-item p {
+    font-size: 13.5px;
+  }
+}
+
+/* ========================= */
+/* SMALL PHONES */
+/* ========================= */
+@media (max-width: 480px) {
+  .pls-section {
+    padding: 60px 20px;
+  }
+
+  .pls-header h2 {
+    font-size: 28px;
+  }
+
+  .pls-header p {
+    font-size: 14.5px;
+  }
+
+  .pls-step {
+    align-items: flex-start;
+  }
+
+  .pls-step svg {
+    font-size: 22px;
+    margin-top: 2px;
+  }
+
+  .pls-card {
+    padding: 22px;
+  }
+
+  .pls-card-item {
+    gap: 12px;
+    padding: 14px 0;
+  }
+
+  .pls-card-item svg {
+    font-size: 20px;
+  }
+
+  .pls-card-item h5 {
+    font-size: 14.5px;
+  }
+
+  .pls-card-item p {
+    font-size: 13px;
+  }
+}

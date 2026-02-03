@@ -193,5 +193,93 @@
   color: #7a4252;
   font-size: 0.95rem;
 }
+/* ================== TABLET ================== */
+@media (max-width: 1024px) {
+  .featuresTitle {
+    font-size: 2rem;
+  }
+
+  .featureGrid {
+    gap: 1.4rem;
+  }
+
+  .card {
+    padding: 2.5rem 2.2rem;
+  }
+
+  .title {
+    font-size: 1.7rem;
+  }
+}
+
+/* ================== MOBILE ================== */
+@media (max-width: 900px) {
+  .container {
+    grid-template-columns: 1fr;
+    padding: 2rem 1rem;
+  }
+
+  /* hide left section */
+  .featuresSection {
+    display: none;
+  }
+
+  .formSection {
+    align-items: flex-start;
+  }
+
+  .card {
+    margin-top: 2rem;
+  }
+}
+
+/* ================== SMALL MOBILE ================== */
+@media (max-width: 600px) {
+  .card {
+    padding: 2rem 1.5rem;
+    border-radius: 16px;
+  }
+
+  .formLogo {
+    width: 70px;
+  }
+
+  .title {
+    font-size: 1.5rem;
+  }
+
+  .input {
+    font-size: 0.9rem;
+    padding: 0.8rem;
+  }
+
+  .submitBtn {
+    padding: 0.85rem;
+    font-size: 0.95rem;
+  }
+
+  .toggleText {
+    font-size: 0.85rem;
+  }
+}
+
+/* ================== VERY SMALL DEVICES ================== */
+@media (max-width: 400px) {
+  .card {
+    padding: 1.6rem 1.2rem;
+  }
+
+  .title {
+    font-size: 1.35rem;
+  }
+
+  .input {
+    font-size: 0.85rem;
+  }
+
+  .submitBtn {
+    font-size: 0.9rem;
+  }
+}
 
 

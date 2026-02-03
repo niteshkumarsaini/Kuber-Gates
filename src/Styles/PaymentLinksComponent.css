@@ -134,3 +134,157 @@
 .pl-card{
     background-color: whitesmoke;
 }
+/* ===============================
+   RESPONSIVE – PAYMENT LINKS
+================================ */
+
+/* -------- Large Tablets -------- */
+@media (max-width: 1024px) {
+
+  .pl-section {
+    padding: 100px 6%;
+  }
+
+  .pl-container {
+    gap: 60px;
+  }
+
+  .pl-left h1 {
+    font-size: 42px;
+  }
+
+  .pl-left p {
+    font-size: 16.5px;
+  }
+}
+
+/* -------- Tablets -------- */
+@media (max-width: 900px) {
+
+  .pl-section {
+    padding: 90px 6%;
+  }
+
+  .pl-container {
+    grid-template-columns: 1fr;
+    gap: 70px;
+  }
+
+  .pl-left {
+    text-align: center;
+  }
+
+  .pl-left p {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .pl-points {
+    display: inline-block;
+    text-align: left;
+    margin: 0 auto;
+  }
+
+  .pl-card {
+    max-width: 520px;
+    margin: 0 auto;
+  }
+}
+
+/* -------- Small Tablets / Phones -------- */
+@media (max-width: 600px) {
+
+  .pl-section {
+    padding: 80px 5%;
+  }
+
+  .pl-badge {
+    font-size: 11px;
+    padding: 5px 12px;
+  }
+
+  .pl-left h1 {
+    font-size: 32px;
+    line-height: 1.2;
+  }
+
+  .pl-left p {
+    font-size: 15px;
+    line-height: 1.6;
+  }
+
+  .pl-points li {
+    font-size: 14px;
+  }
+
+  .pl-card {
+    padding: 22px;
+  }
+
+  .pl-item {
+    padding: 18px;
+    gap: 14px;
+  }
+
+  .pl-item h4 {
+    font-size: 15px;
+  }
+
+  .pl-item p {
+    font-size: 13px;
+  }
+
+  .pl-icon {
+    width: 40px;
+    height: 40px;
+    font-size: 16px;
+  }
+}
+
+/* -------- Small Phones -------- */
+@media (max-width: 480px) {
+
+  .pl-section {
+    padding: 120px 5%;
+    padding-top: 120px;
+    padding-bottom: 30px;
+  }
+
+  .pl-left h1 {
+    font-size: 28px;
+  }
+
+  .pl-left p {
+    font-size: 14px;
+  }
+
+  .pl-item {
+    padding: 16px;
+  }
+
+  .pl-icon {
+    width: 36px;
+    height: 36px;
+    font-size: 15px;
+  }
+}
+
+/* -------- Ultra Small Devices -------- */
+@media (max-width: 360px) {
+
+  .pl-left h1 {
+    font-size: 24px;
+  }
+
+  .pl-left p {
+    font-size: 13.5px;
+  }
+
+  .pl-item h4 {
+    font-size: 14px;
+  }
+
+  .pl-item p {
+    font-size: 12.5px;
+  }
+}

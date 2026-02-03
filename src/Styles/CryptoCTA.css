@@ -105,6 +105,7 @@
   /* Section spacing */
   .premium-cta {
     padding: 100px 16px 90px;
+    padding-top: 40px;
   }
 
   /* Background glows (prevent overflow) */

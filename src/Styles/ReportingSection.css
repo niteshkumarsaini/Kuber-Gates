@@ -94,3 +94,127 @@
     font-size: 36px;
   }
 }
+/* ===============================
+   RESPONSIVE FIXES
+================================ */
+
+/* ---------- Large Tablets ---------- */
+@media (max-width: 1024px) {
+
+  .reporting-section {
+    padding: 100px 0;
+  }
+
+  .reporting-header h2 {
+    font-size: 38px;
+  }
+
+  .reporting-header p {
+    font-size: 16px;
+  }
+
+  .reporting-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+  }
+}
+
+/* ---------- Tablets & Large Phones ---------- */
+@media (max-width: 768px) {
+
+  .reporting-section {
+    padding: 90px 0;
+  }
+
+  .reporting-container {
+    padding: 0 24px;
+  }
+
+  .reporting-header {
+    margin-bottom: 60px;
+  }
+
+  .reporting-header h2 {
+    font-size: 32px;
+    line-height: 1.2;
+  }
+
+  .reporting-header p {
+    font-size: 15px;
+    line-height: 1.6;
+  }
+
+  .reporting-grid {
+    gap: 22px;
+  }
+
+  .reporting-card {
+    padding: 26px;
+  }
+}
+
+/* ---------- Small Phones ---------- */
+@media (max-width: 480px) {
+
+  .reporting-section {
+    padding: 80px 0;
+  }
+
+  .reporting-header {
+    margin-bottom: 50px;
+  }
+
+  .reporting-header h2 {
+    font-size: 26px;
+  }
+
+  .reporting-header p {
+    font-size: 14px;
+  }
+
+  .reporting-grid {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .reporting-card {
+    padding: 22px;
+    border-radius: 18px;
+  }
+
+  .reporting-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+  }
+
+  .reporting-icon svg {
+    width: 20px;
+    height: 20px;
+  }
+
+  .reporting-card h4 {
+    font-size: 15px;
+  }
+
+  .reporting-card p {
+    font-size: 13.5px;
+    line-height: 1.6;
+  }
+}
+
+/* ---------- Ultra Small Devices ---------- */
+@media (max-width: 360px) {
+
+  .reporting-header h2 {
+    font-size: 24px;
+  }
+
+  .reporting-header p {
+    font-size: 13.5px;
+  }
+
+  .reporting-card {
+    padding: 20px;
+  }
+}

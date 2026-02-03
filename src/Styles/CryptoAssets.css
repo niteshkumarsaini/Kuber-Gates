@@ -288,3 +288,171 @@
   line-height: 1.6;
   color: #64748b;
 }
+/* ===============================
+   RESPONSIVE – CRYPTO ASSETS
+================================ */
+
+/* ---------- Large Tablets ---------- */
+@media (max-width: 1024px) {
+
+  .crypto-section {
+    padding: 90px 0;
+  }
+
+  .crypto-heading h2 {
+    font-size: 32px;
+  }
+
+  .crypto-heading p {
+    font-size: 15px;
+  }
+
+  .crypto-grid {
+    gap: 24px;
+  }
+
+  .crypto-card {
+    padding: 24px;
+  }
+}
+
+/* ---------- Tablets ---------- */
+@media (max-width: 768px) {
+
+  .crypto-section {
+    padding: 80px 0;
+  }
+
+  .crypto-container {
+    padding: 0 20px;
+  }
+
+  .crypto-heading {
+    margin-bottom: 44px;
+  }
+
+  .crypto-heading h2 {
+    font-size: 28px;
+    line-height: 1.25;
+  }
+
+  .crypto-heading p {
+    font-size: 14.5px;
+  }
+
+  .crypto-tabs {
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 36px;
+  }
+
+  .crypto-tab {
+    padding: 10px 16px;
+    font-size: 13px;
+    border-radius: 12px;
+  }
+
+  .crypto-grid {
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: 22px;
+  }
+
+  .crypto-icon {
+    width: 44px;
+    height: 44px;
+    font-size: 22px;
+  }
+
+  .tron-icon {
+    width: 22px;
+    height: 22px;
+  }
+}
+
+/* ---------- Small Phones ---------- */
+@media (max-width: 480px) {
+
+  .crypto-section {
+    padding: 40px 0;
+  }
+
+  .crypto-heading h2 {
+    font-size: 24px;
+  }
+
+  .crypto-heading p {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  .crypto-tabs {
+    margin-bottom: 30px;
+  }
+
+  .crypto-tab {
+    font-size: 12.5px;
+    padding: 9px 14px;
+  }
+
+  .crypto-grid {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .crypto-card {
+    padding: 20px;
+    border-radius: 18px;
+  }
+
+  .crypto-card-header {
+    gap: 12px;
+  }
+
+  .crypto-title h4 {
+    font-size: 15px;
+  }
+
+  .crypto-title p {
+    font-size: 12.5px;
+  }
+
+  .crypto-divider {
+    margin: 16px 0;
+  }
+
+  .crypto-label {
+    font-size: 11.5px;
+  }
+
+  .crypto-tag {
+    font-size: 11.5px;
+    padding: 5px 12px;
+  }
+}
+
+/* ---------- Ultra Small Devices ---------- */
+@media (max-width: 360px) {
+
+  .crypto-heading h2 {
+    font-size: 22px;
+  }
+
+  .crypto-heading p {
+    font-size: 13.5px;
+  }
+
+  .crypto-tab {
+    padding: 8px 12px;
+    font-size: 12px;
+  }
+
+  .crypto-card {
+    padding: 18px;
+  }
+
+  .crypto-icon {
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+  }
+}

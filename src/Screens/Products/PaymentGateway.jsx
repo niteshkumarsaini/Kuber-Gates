@@ -14,8 +14,6 @@ const PaymentGateway = () => {
       <CryptoCTA/>
       <Footer/>
 
-
-
     </div>
   )
 }

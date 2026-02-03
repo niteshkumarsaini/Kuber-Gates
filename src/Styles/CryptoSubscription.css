@@ -244,3 +244,168 @@
     padding: 70px 6%;
   }
 }
+/* ========================= */
+/* TABLET (<= 1024px) */
+/* ========================= */
+@media (max-width: 1024px) {
+  .premium-subscription {
+    padding: 80px 6%;
+    min-height: auto;
+  }
+
+  .premium-header h2 {
+    font-size: 36px;
+  }
+
+  .premium-header p {
+    font-size: 16px;
+  }
+
+  .plans-grid {
+    gap: 26px;
+  }
+
+  .plan-card {
+    padding: 34px 28px;
+  }
+
+  .price {
+    font-size: 38px;
+  }
+
+  .cta-btn {
+    width: 55%;
+  }
+}
+
+/* ========================= */
+/* MOBILE (<= 768px) */
+/* ========================= */
+@media (max-width: 768px) {
+  .premium-subscription {
+    padding: 70px 5%;
+  }
+
+  /* Header */
+  .premium-header {
+    margin-bottom: 50px;
+  }
+
+  .premium-header h2 {
+    font-size: 30px;
+    line-height: 1.25;
+  }
+
+  .premium-header p {
+    font-size: 15px;
+  }
+
+  /* Billing toggle */
+  .billing-toggle {
+    gap: 12px;
+  }
+
+  .billing-toggle span {
+    font-size: 13px;
+  }
+
+  /* Cards */
+  .plan-card {
+    padding: 30px 26px;
+    border-radius: 20px;
+  }
+
+  .plan-card h3 {
+    font-size: 20px;
+  }
+
+  .price {
+    font-size: 34px;
+    margin: 18px 0;
+  }
+
+  .plan-card li {
+    font-size: 14px;
+  }
+
+  .cta-btn {
+    width: 100%;
+    font-size: 15px;
+  }
+}
+
+/* ========================= */
+/* SMALL MOBILE (<= 480px) */
+/* ========================= */
+@media (max-width: 480px) {
+  .premium-subscription {
+    padding: 85px 4%;
+    padding-bottom: 0px;
+    /* border: 2px solid red; */
+  }
+  .cta-btn{
+    width: 140px;
+  }
+
+  .premium-header h2 {
+    font-size: 26px;
+  }
+
+  .premium-header p {
+    font-size: 14px;
+  }
+
+  /* Toggle tighter */
+  .billing-toggle {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .switch {
+    width: 48px;
+    height: 24px;
+  }
+
+  .slider::before {
+    height: 18px;
+    width: 18px;
+    top: 3px;
+    left: 3px;
+  }
+
+  .switch input:checked + .slider::before {
+    transform: translateX(22px);
+  }
+
+  /* Cards */
+  .plan-card {
+    padding: 26px 22px;
+  }
+
+  .badge {
+    font-size: 11px;
+    padding: 5px 14px;
+  }
+
+  .plan-card h3 {
+    font-size: 19px;
+  }
+
+  .price {
+    font-size: 30px;
+  }
+
+  .price span {
+    font-size: 13px;
+  }
+
+  .plan-card li {
+    font-size: 13.5px;
+  }
+
+  .cta-btn {
+    padding: 13px;
+    font-size: 14.5px;
+    border-radius: 12px;
+  }
+}

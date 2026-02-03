@@ -151,3 +151,163 @@
     grid-template-columns: 1fr;
   }
 }
+/* ========================= */
+/* TABLET (<= 1024px) */
+/* ========================= */
+@media (max-width: 1024px) {
+  .refund-section {
+    padding: 90px 5%;
+  }
+
+  .refund-header h2 {
+    font-size: 36px;
+  }
+
+  .refund-header p {
+    font-size: 16px;
+  }
+
+  .refund-grid {
+    gap: 60px;
+  }
+
+  .refund-card {
+    padding: 36px;
+  }
+}
+
+/* ========================= */
+/* MOBILE (<= 768px) */
+/* ========================= */
+@media (max-width: 768px) {
+  .refund-section {
+    padding: 80px 5%;
+  }
+
+  /* Header */
+  .refund-header {
+    margin-bottom: 60px;
+  }
+
+  .refund-header h2 {
+    font-size: 30px;
+    line-height: 1.25;
+  }
+
+  .refund-header p {
+    font-size: 15px;
+  }
+
+  /* Grid stack */
+  .refund-grid {
+    grid-template-columns: 1fr;
+    gap: 50px;
+  }
+
+  /* Left content */
+  .refund-left h3 {
+    font-size: 22px;
+    margin-bottom: 22px;
+  }
+
+  .refund-point {
+    gap: 14px;
+  }
+
+  .refund-point svg {
+    font-size: 20px;
+  }
+
+  .refund-point h4 {
+    font-size: 15px;
+  }
+
+  .refund-point p {
+    font-size: 13.5px;
+  }
+
+  /* Card */
+  .refund-card {
+    padding: 32px;
+  }
+
+  .refund-card h4 {
+    font-size: 18px;
+  }
+
+  .refund-card p {
+    font-size: 14px;
+  }
+
+  .refund-card-list li {
+    font-size: 13.5px;
+  }
+
+  .refund-btn {
+    width: 100%;
+  }
+}
+
+/* ========================= */
+/* SMALL MOBILE (<= 480px) */
+/* ========================= */
+@media (max-width: 480px) {
+  .refund-section {
+    padding: 110px 4%;
+    padding-bottom: 20px;
+  }
+
+  /* Header tighter */
+  .refund-header h2 {
+    font-size: 26px;
+  }
+
+  .refund-header p {
+    font-size: 14px;
+  }
+
+  /* Left content tighter */
+  .refund-left h3 {
+    font-size: 20px;
+  }
+
+  .refund-point {
+    gap: 12px;
+  }
+
+  .refund-point svg {
+    font-size: 18px;
+  }
+
+  .refund-point h4 {
+    font-size: 14.5px;
+  }
+
+  .refund-point p {
+    font-size: 13px;
+  }
+
+  /* Card tighter */
+  .refund-card {
+    padding: 26px;
+    border-radius: 22px;
+  }
+
+  .refund-card-icon {
+    width: 60px;
+    height: 60px;
+    font-size: 26px;
+  }
+
+  .refund-card h4 {
+    font-size: 17px;
+  }
+
+  .refund-card p {
+    font-size: 13.5px;
+  }
+
+  .refund-card-list li {
+    font-size: 13px;
+  }
+}

@@ -183,3 +183,156 @@
     grid-template-columns: 1fr;
   }
 }
+/* ========================= */
+/* TABLET (<= 1024px) */
+/* ========================= */
+@media (max-width: 1024px) {
+  .mc-section {
+    padding: 100px 5%;
+  }
+
+  .mc-header h2 {
+    font-size: 36px;
+  }
+
+  .mc-header p {
+    font-size: 16px;
+  }
+
+  .mc-grid {
+    gap: 60px;
+  }
+
+  .mc-left h3 {
+    font-size: 24px;
+  }
+
+  .mc-card {
+    padding: 36px;
+  }
+}
+
+/* ========================= */
+/* MOBILE (<= 768px) */
+/* ========================= */
+@media (max-width: 768px) {
+  .mc-section {
+    padding: 80px 5%;
+  }
+
+  /* Header */
+  .mc-header {
+    margin-bottom: 60px;
+  }
+
+  .mc-header h2 {
+    font-size: 30px;
+    line-height: 1.25;
+  }
+
+  .mc-header p {
+    font-size: 15px;
+  }
+
+  /* Grid stack */
+  .mc-grid {
+    grid-template-columns: 1fr;
+    gap: 50px;
+  }
+
+  /* Left content */
+  .mc-left h3 {
+    font-size: 22px;
+    margin-bottom: 22px;
+  }
+
+  .mc-point {
+    gap: 14px;
+  }
+
+  .mc-point svg {
+    font-size: 22px;
+  }
+
+  .mc-point h4 {
+    font-size: 15px;
+  }
+
+  .mc-point p {
+    font-size: 14px;
+  }
+
+  /* Card */
+  .mc-card {
+    padding: 32px;
+  }
+
+  .mc-card h4 {
+    font-size: 18px;
+  }
+
+  .mc-card p {
+    font-size: 14.5px;
+  }
+}
+
+/* ========================= */
+/* SMALL MOBILE (<= 480px) */
+/* ========================= */
+@media (max-width: 480px) {
+  .mc-section {
+    padding: 70px 4%;
+    padding-top: 120px;
+    padding-bottom: 30px;
+  }
+
+  /* Header tighter */
+  .mc-header h2 {
+    font-size: 26px;
+  }
+
+  .mc-header p {
+    font-size: 14px;
+  }
+
+  /* Points tighter */
+  .mc-point {
+    gap: 12px;
+  }
+
+  .mc-point svg {
+    font-size: 20px;
+  }
+
+  .mc-point h4 {
+    font-size: 14.5px;
+  }
+
+  .mc-point p {
+    font-size: 13.5px;
+  }
+
+  /* Card tighter */
+  .mc-card {
+    padding: 26px;
+    border-radius: 22px;
+  }
+
+  .mc-card-header {
+    font-size: 13px;
+  }
+
+  .mc-card-header svg {
+    font-size: 20px;
+  }
+
+  .mc-list li {
+    font-size: 13.5px;
+  }
+
+  /* Button */
+  .mc-btn {
+    padding: 13px;
+    font-size: 14.5px;
+  }
+}

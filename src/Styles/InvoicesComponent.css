@@ -279,3 +279,321 @@
     grid-template-columns: 1fr;
   }
 }
+/* ========================= */
+/* TABLET (<= 1024px) */
+/* ========================= */
+@media (max-width: 1024px) {
+  .inv-section {
+    padding: 90px 5%;
+  }
+
+  .inv-header h2 {
+    font-size: 36px;
+  }
+
+  .inv-header p {
+    font-size: 16px;
+  }
+
+  .inv-grid {
+    gap: 50px;
+  }
+
+  .inv-card {
+    padding: 32px;
+  }
+}
+
+/* ========================= */
+/* MOBILE (<= 768px) */
+/* ========================= */
+@media (max-width: 768px) {
+  .inv-section {
+    padding: 80px 5%;
+  }
+
+  /* Header */
+  .inv-header {
+    margin-bottom: 50px;
+  }
+
+  .inv-header h2 {
+    font-size: 30px;
+    line-height: 1.25;
+  }
+
+  .inv-header p {
+    font-size: 15px;
+  }
+
+  /* Grid stack */
+  .inv-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  /* Steps */
+  .inv-step {
+    gap: 14px;
+    margin-bottom: 26px;
+  }
+
+  .inv-step svg {
+    font-size: 24px;
+  }
+
+  .inv-step h4 {
+    font-size: 16px;
+  }
+
+  .inv-step p {
+    font-size: 14px;
+  }
+
+  /* Card */
+  .inv-card {
+    padding: 28px;
+  }
+
+  .inv-card-item {
+    gap: 14px;
+  }
+
+  .inv-card-item h5 {
+    font-size: 15px;
+  }
+
+  .inv-card-item p {
+    font-size: 13.5px;
+  }
+}
+
+/* ========================= */
+/* SMALL MOBILE (<= 480px) */
+/* ========================= */
+@media (max-width: 480px) {
+  .inv-section {
+    padding: 120px 4%;
+    padding-bottom: 20px;
+  }
+
+  .inv-header h2 {
+    font-size: 26px;
+  }
+
+  .inv-header p {
+    font-size: 14px;
+  }
+
+  /* Steps tighter */
+  .inv-step {
+    gap: 12px;
+  }
+
+  .inv-step svg {
+    font-size: 22px;
+  }
+
+  .inv-step h4 {
+    font-size: 15px;
+  }
+
+  .inv-step p {
+    font-size: 13.5px;
+  }
+
+  /* Card tighter */
+  .inv-card {
+    padding: 24px;
+    border-radius: 22px;
+  }
+
+  .inv-card-item svg {
+    font-size: 20px;
+  }
+
+  .inv-card-item h5 {
+    font-size: 14.5px;
+  }
+
+  .inv-card-item p {
+    font-size: 13px;
+  }
+}
+/* ========================= */
+/* INVOICE FEATURES – RESPONSIVE */
+/* ========================= */
+
+/* TABLET (<= 1024px) */
+@media (max-width: 1024px) {
+  .inv-features {
+    padding: 80px 5%;
+  }
+
+  .inv-feature-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 28px;
+  }
+
+  .inv-feature h4 {
+    font-size: 16px;
+  }
+
+  .inv-feature p {
+    font-size: 14.5px;
+  }
+}
+
+/* MOBILE (<= 768px) */
+@media (max-width: 768px) {
+  .inv-features {
+    padding: 70px 5%;
+  }
+
+  .inv-feature-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .inv-feature svg {
+    font-size: 26px;
+    margin-bottom: 10px;
+  }
+
+  .inv-feature h4 {
+    font-size: 15.5px;
+  }
+
+  .inv-feature p {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+}
+
+/* SMALL MOBILE (<= 480px) */
+@media (max-width: 480px) {
+  .inv-features {
+    padding: 60px 4%;
+    /* border: 2px solid orange; */
+    padding-bottom: 20px;
+  }
+
+  .inv-feature {
+    padding: 0 10px;
+  }
+
+  .inv-feature svg {
+    font-size: 24px;
+  }
+
+  .inv-feature h4 {
+    font-size: 15px;
+  }
+
+  .inv-feature p {
+    font-size: 13.5px;
+  }
+}
+/* ========================= */
+/* TABLET (<= 1024px) */
+/* ========================= */
+@media (max-width: 1024px) {
+  .inv-workflow {
+    padding: 90px 5%;
+  }
+
+  .inv-workflow-grid {
+    gap: 50px;
+  }
+
+  .inv-steps h2 {
+    font-size: 34px;
+  }
+}
+
+/* ========================= */
+/* MOBILE (<= 768px) */
+/* ========================= */
+@media (max-width: 768px) {
+  .inv-workflow {
+    padding: 80px 5%;
+  }
+
+  /* Stack layout */
+  .inv-workflow-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  /* Heading */
+  .inv-steps h2 {
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  /* Steps */
+  .inv-step {
+    gap: 14px;
+    margin-top: 22px;
+  }
+
+  .inv-step svg {
+    font-size: 22px;
+  }
+
+  .inv-step h4 {
+    font-size: 16px;
+  }
+
+  .inv-step p {
+    font-size: 14px;
+  }
+
+  /* Preview card */
+  .inv-preview {
+    padding: 28px;
+  }
+}
+
+/* ========================= */
+/* SMALL MOBILE (<= 480px) */
+/* ========================= */
+@media (max-width: 480px) {
+  .inv-workflow {
+    padding: 60px 4%;
+  }
+
+  /* Steps tighter */
+  .inv-step {
+    gap: 12px;
+    margin-top: 18px;
+  }
+
+  .inv-step svg {
+    font-size: 20px;
+  }
+
+  .inv-step h4 {
+    font-size: 15px;
+  }
+
+  .inv-step p {
+    font-size: 13.5px;
+  }
+
+  /* Preview card tighter */
+  .inv-preview {
+    padding: 22px;
+    border-radius: 20px;
+  }
+
+  .inv-preview-row {
+    font-size: 14px;
+  }
+
+  .inv-preview-btn {
+    padding: 12px;
+    font-size: 14px;
+  }
+}

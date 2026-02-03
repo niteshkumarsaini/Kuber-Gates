@@ -176,3 +176,124 @@
     grid-template-columns: 1fr;
   }
 }
+/* Tablets */
+@media (max-width: 1024px) {
+  .sdk-section {
+    padding: 100px 6%;
+  }
+
+  .sdk-grid {
+    gap: 60px;
+  }
+
+  .sdk-header h2 {
+    font-size: 36px;
+  }
+
+  .sdk-header p {
+    font-size: 16px;
+  }
+}
+
+/* Small tablets & large phones */
+@media (max-width: 900px) {
+  .sdk-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .sdk-left h3 {
+    font-size: 26px;
+    text-align: center;
+  }
+
+  .sdk-points {
+    align-items: center;
+  }
+
+  .sdk-point {
+    max-width: 520px;
+  }
+
+  .sdk-card {
+    padding: 36px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .sdk-section {
+    padding: 80px 5%;
+    padding-top: 120px;
+  }
+
+  .sdk-header {
+    margin-bottom: 60px;
+  }
+
+  .sdk-header h2 {
+    font-size: 30px;
+    line-height: 1.3;
+  }
+
+  .sdk-header p {
+    font-size: 15px;
+  }
+
+  .sdk-left h3 {
+    font-size: 22px;
+    margin-bottom: 20px;
+  }
+
+  .sdk-point {
+    gap: 12px;
+  }
+
+  .sdk-point svg {
+    font-size: 20px;
+  }
+
+  .sdk-point h4 {
+    font-size: 15px;
+  }
+
+  .sdk-point p {
+    font-size: 13.5px;
+  }
+
+  .sdk-card {
+    padding: 28px;
+  }
+
+  .sdk-card-top {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .sdk-languages {
+    grid-template-columns: 1fr;
+  }
+
+  .sdk-code {
+    font-size: 12px;
+    padding: 14px;
+  }
+
+  .sdk-note {
+    font-size: 13px;
+  }
+
+  .sdk-btn {
+    width: 100%;
+  }
+}
+
+/* Very small phones */
+@media (max-width: 400px) {
+  .sdk-header h2 {
+    font-size: 26px;
+  }
+
+  .sdk-card {
+    padding: 24px;
+  }
+}

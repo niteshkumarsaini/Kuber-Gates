@@ -72,3 +72,85 @@
   line-height: 1.6;
   color: var(--grey);
 }
+/* =====================
+   RESPONSIVE FIXES
+===================== */
+
+/* ---------- Tablets & Small Laptops ---------- */
+@media (max-width: 1024px) {
+
+  .ac-features-container {
+    padding: 70px 60px;
+  }
+
+  .ac-features-title {
+    font-size: 36px;
+  }
+
+  .ac-features-grid {
+    gap: 40px;
+  }
+}
+
+/* ---------- Tablets & Large Phones ---------- */
+@media (max-width: 768px) {
+
+  .ac-features-section {
+    padding: 100px 6%;
+  }
+
+  .ac-features-container {
+    padding: 60px 40px;
+    border-radius: 22px;
+  }
+
+  .ac-features-title {
+    font-size: 32px;
+    line-height: 1.25;
+  }
+
+  .ac-features-subtitle {
+    font-size: 15px;
+  }
+
+  .ac-features-grid {
+    grid-template-columns: 1fr;
+    gap: 42px;
+    margin-top: 50px;
+  }
+
+  .ac-feature-card {
+    padding: 0;
+  }
+}
+
+/* ---------- Small Phones ---------- */
+@media (max-width: 480px) {
+
+  .ac-features-section {
+    padding: 40px 5%;
+    /* border: 2px solid orange; */
+  }
+
+  .ac-features-container {
+    padding: 44px 24px;
+    border-radius: 18px;
+  }
+
+  .ac-features-title {
+    font-size: 26px;
+  }
+
+  .ac-features-subtitle {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
+  .ac-feature-card h3 {
+    font-size: 16px;
+  }
+
+  .ac-feature-card p {
+    font-size: 14px;
+  }
+}
